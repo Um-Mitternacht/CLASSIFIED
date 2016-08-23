@@ -8,7 +8,7 @@ public class ItemHops extends GrcItemBase
 	public ItemHops()
 	{
 		super();
-		this.setUnlocalizedName("grc.hops");
+		this.setUnlocalizedName("hops");
 		this.setCreativeTab(GrowthCraftCore.creativeTab);
 	}
 }

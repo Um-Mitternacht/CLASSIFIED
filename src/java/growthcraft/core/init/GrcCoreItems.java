@@ -56,8 +56,8 @@ public class GrcCoreItems extends GrcModuleItems
 	{
 		rope.register("rope");
 		salt.register("salt");
-		saltBottle.register("salt_bottle");
-		saltBucket.register("salt_bucket");
+		saltBottle.register("bottle_salt");
+		saltBucket.register("bucket_salt");
 		crowbar.register("crowbar");
 	}
 
