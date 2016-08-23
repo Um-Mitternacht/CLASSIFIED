@@ -18,7 +18,7 @@ public class ItemGrapes extends GrcItemFoodBase
 		super(2, 0.3F, false);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.grapes");
+		setUnlocalizedName("grapes");
 		setCreativeTab(GrowthCraftGrapes.creativeTab);
 	}
 

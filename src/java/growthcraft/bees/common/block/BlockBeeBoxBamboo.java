@@ -36,7 +36,7 @@ public class BlockBeeBoxBamboo extends BlockBeeBox
 	public BlockBeeBoxBamboo()
 	{
 		super();
-		this.setUnlocalizedName("grc.bee_box.bamboo");
+		this.setUnlocalizedName("bee_box.bamboo");
 	}
 
 	@Override

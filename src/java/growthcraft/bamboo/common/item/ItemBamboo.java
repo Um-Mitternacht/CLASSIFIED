@@ -14,7 +14,7 @@ public class ItemBamboo extends GrcPseudoItemBlock
 	public ItemBamboo()
 	{
 		super();
-		setUnlocalizedName("grc.bamboo");
+		setUnlocalizedName("bamboo");
 		setCreativeTab(GrowthCraftBamboo.creativeTab);
 	}
 

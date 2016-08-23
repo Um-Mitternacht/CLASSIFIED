@@ -31,7 +31,7 @@ public class ItemStarterCulture extends GrcItemBase
 	public ItemStarterCulture()
 	{
 		super();
-		setUnlocalizedName("grc.starter_culture");
+		setUnlocalizedName("starter_culture");
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 	}
 }

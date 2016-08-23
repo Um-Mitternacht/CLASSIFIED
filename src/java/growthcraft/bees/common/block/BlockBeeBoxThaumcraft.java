@@ -36,7 +36,7 @@ public class BlockBeeBoxThaumcraft extends BlockBeeBox
 	public BlockBeeBoxThaumcraft()
 	{
 		super();
-		this.setUnlocalizedName("grc.bee_box.thaumcraft");
+		this.setUnlocalizedName("bee_box.thaumcraft");
 	}
 
 	@Override

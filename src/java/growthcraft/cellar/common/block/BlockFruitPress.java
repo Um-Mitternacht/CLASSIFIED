@@ -8,8 +8,10 @@ import growthcraft.cellar.util.CellarGuiType;
 import growthcraft.api.core.util.BlockFlags;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.state.BlockState;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -32,6 +34,27 @@ public class BlockFruitPress extends BlockCellarContainer
 		setUnlocalizedName("fruit_press");
 		setCreativeTab(GrowthCraftCellar.tab);
 		setGuiType(CellarGuiType.FRUIT_PRESS);
+		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+	}
+
+	@Override
+	@SuppressWarnings({"rawtypes"})
+	protected BlockState createBlockState()
+	{
+		return new BlockState(this, new IProperty[] {FACING});
+	}
+
+	@Override
+	public IBlockState getStateFromMeta(int meta)
+	{
+		return getDefaultState()
+			.withProperty(FACING, EnumFacing.getHorizontal(meta & 3));
+	}
+
+	@Override
+	public int getMetaFromState(IBlockState state)
+	{
+		return state.getValue(FACING).getHorizontalIndex();
 	}
 
 	private Block getPresserBlock()
@@ -48,17 +71,16 @@ public class BlockFruitPress extends BlockCellarContainer
 	public void doRotateBlock(World world, BlockPos pos, EnumFacing side)
 	{
 		final EnumFacing rot = side.rotateY();
-		world.setBlockState(pos, world.getBlockState(pos).withProperty(ROTATION, rot.ordinal()), BlockFlags.SYNC);
-		world.setBlockState(pos.up(), world.getBlockState(pos).withProperty(ROTATION, rot.ordinal()), BlockFlags.SYNC);
+		world.setBlockState(pos, world.getBlockState(pos).withProperty(FACING, rot), BlockFlags.SYNC);
+		world.setBlockState(pos.up(), world.getBlockState(pos).withProperty(FACING, rot), BlockFlags.SYNC);
 	}
 
 	@Override
 	public void onBlockAdded(World world, BlockPos pos, IBlockState state)
 	{
 		super.onBlockAdded(world, pos, state);
-		world.setBlockState(pos.up(), getPresserBlock().getDefaultState().withProperty(ROTATION, state.getValue(ROTATION)), BlockFlags.SYNC);
+		world.setBlockState(pos.up(), getPresserBlock().getDefaultState().withProperty(FACING, state.getValue(FACING)), BlockFlags.SYNC);
 	}
-
 
 	@Override
 	public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack stack)
@@ -75,7 +97,7 @@ public class BlockFruitPress extends BlockCellarContainer
 		//	world.setBlockMetadataWithNotify(x, y, z, 1, BlockFlags.SYNC);
 		//}
 
-		world.setBlockState(pos.up(), getPresserBlock().getDefaultState().withProperty(ROTATION, state.getValue(ROTATION)), BlockFlags.SYNC);
+		world.setBlockState(pos.up(), getPresserBlock().getDefaultState().withProperty(FACING, state.getValue(FACING)), BlockFlags.SYNC);
 	}
 
 	@Override
@@ -101,7 +123,7 @@ public class BlockFruitPress extends BlockCellarContainer
 	public boolean isSideSolid(IBlockAccess world, BlockPos pos, EnumFacing side)
 	{
 		final IBlockState state = world.getBlockState(pos);
-		final EnumFacing rot = EnumFacing.getFront((int)state.getValue(ROTATION));
+		final EnumFacing rot = state.getValue(FACING);
 		switch (rot)
 		{
 			case NORTH:

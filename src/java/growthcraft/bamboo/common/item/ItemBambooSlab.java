@@ -13,6 +13,6 @@ public class ItemBambooSlab extends ItemSlab
 			GrowthCraftBamboo.blocks.bambooSingleSlab.getBlock(),
 			GrowthCraftBamboo.blocks.bambooDoubleSlab.getBlock()
 		);
-		setUnlocalizedName("grc.bamboo_slab");
+		setUnlocalizedName("bamboo_slab");
 	}
 }

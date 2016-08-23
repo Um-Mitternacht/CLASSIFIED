@@ -42,7 +42,7 @@ public class ItemSeedThistle extends GrcItemBase implements IPlantable
 	public ItemSeedThistle()
 	{
 		super();
-		setUnlocalizedName("grc.seed_thistle");
+		setUnlocalizedName("seed_thistle");
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 	}
 

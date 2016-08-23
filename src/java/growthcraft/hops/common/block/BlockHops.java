@@ -59,7 +59,7 @@ public class BlockHops extends GrcBlockBase implements IBlockRope, IPlantable, I
 		setTickRandomly(true);
 		setHardness(0.0F);
 		setStepSound(soundTypeGrass);
-		setUnlocalizedName("grc.hop_vine");
+		setUnlocalizedName("hop_vine");
 		setCreativeTab(null);
 		setDefaultState(blockState.getBaseState().withProperty(GROWTH, HopsStage.BINE));
 	}

@@ -11,6 +11,8 @@ import growthcraft.api.core.util.BlockFlags;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -37,17 +39,38 @@ public class BlockFruitPresser extends BlockCellarContainer implements IWrenchab
 		setCreativeTab(null);
 		setBlockBounds(0.1875F, 0.0F, 0.1875F, 0.8125F, 0.9375F, 0.8125F);
 		setTileEntityType(TileEntityFruitPresser.class);
+		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(PRESS_STATE, false));
+	}
+
+	@Override
+	@SuppressWarnings({"rawtypes"})
+	protected BlockState createBlockState()
+	{
+		return new BlockState(this, new IProperty[] {FACING, PRESS_STATE});
+	}
+
+	@Override
+	public IBlockState getStateFromMeta(int meta)
+	{
+		return getDefaultState()
+			.withProperty(FACING, EnumFacing.getHorizontal(meta & 3))
+			.withProperty(PRESS_STATE, meta % 4 == 4);
+	}
+
+	@Override
+	public int getMetaFromState(IBlockState state)
+	{
+		return state.getValue(FACING).getHorizontalIndex() |
+			(state.getValue(PRESS_STATE) ? 4 : 0);
 	}
 
 	public String getPressStateName(int meta)
 	{
-		switch(meta)
+		switch ((meta & 4) >> 2)
 		{
 			case 0:
-			case 1:
 				return "unpressed";
-			case 2:
-			case 3:
+			case 1:
 				return "pressed";
 			default:
 				return "invalid";
@@ -92,9 +115,10 @@ public class BlockFruitPresser extends BlockCellarContainer implements IWrenchab
 	{
 		if (world.isRemote) return true;
 		final IBlockState belowState = world.getBlockState(pos.down());
-		if (belowState.getBlock() instanceof BlockFruitPress)
+		final Block block = belowState.getBlock();
+		if (block instanceof BlockFruitPress)
 		{
-			return ((BlockFruitPress)belowState).tryWrenchItem(world, pos.down(), state, player);
+			return ((BlockFruitPress)block).tryWrenchItem(world, pos.down(), state, player);
 		}
 		return false;
 	}
@@ -122,7 +146,8 @@ public class BlockFruitPresser extends BlockCellarContainer implements IWrenchab
 	{
 		super.onBlockAdded(world, pos, state);
 		final IBlockState bottomState = world.getBlockState(pos.down());
-		world.setBlockState(pos, state.withProperty(ROTATION, bottomState.getValue(ROTATION)), BlockFlags.UPDATE_AND_SYNC);
+		final EnumFacing facing = bottomState.getValue(FACING);
+		world.setBlockState(pos, state.withProperty(FACING, facing), BlockFlags.UPDATE_AND_SYNC);
 		if (!world.isRemote)
 		{
 			updatePressState(world, pos, state);
@@ -133,8 +158,8 @@ public class BlockFruitPresser extends BlockCellarContainer implements IWrenchab
 	public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack stack)
 	{
 		super.onBlockPlacedBy(world, pos, state, entity, stack);
-		final int m = world.getBlockState(pos.down()).getValue(ROTATION);
-		world.setBlockState(pos, state.withProperty(ROTATION, m), BlockFlags.SYNC);
+		final EnumFacing facing = world.getBlockState(pos.down()).getValue(FACING);
+		world.setBlockState(pos, state.withProperty(FACING, facing), BlockFlags.SYNC);
 		if (!world.isRemote)
 		{
 			updatePressState(world, pos, state);
@@ -162,15 +187,16 @@ public class BlockFruitPresser extends BlockCellarContainer implements IWrenchab
 	@Override
 	public boolean isSideSolid(IBlockAccess world, BlockPos pos, EnumFacing side)
 	{
-		GrowthCraftCellar.getLogger().warn("(fixme) BlockFruitPresser#isSideSolid");
-		//if (meta == 0 || meta == 2)
-		//{
-		//	return side == EnumFacing.EAST || side == EnumFacing.WEST;
-		//}
-		//else if (meta == 1 || meta == 3)
-		//{
-		//	return side == EnumFacing.NORTH || side == EnumFacing.SOUTH;
-		//}
+		final IBlockState state = world.getBlockState(pos);
+		final EnumFacing facing = state.getValue(FACING);
+		if (facing == EnumFacing.NORTH || facing == EnumFacing.SOUTH)
+		{
+			return side == EnumFacing.EAST || side == EnumFacing.WEST;
+		}
+		else if (facing == EnumFacing.EAST || facing == EnumFacing.WEST)
+		{
+			return side == EnumFacing.NORTH || side == EnumFacing.SOUTH;
+		}
 		return isNormalCube(world, pos);
 	}
 

@@ -45,7 +45,7 @@ public class BlockButterChurn extends GrcBlockContainer
 		super(Material.wood);
 		setResistance(5.0F);
 		setHardness(2.0F);
-		setUnlocalizedName("grc.butter_churn");
+		setUnlocalizedName("butter_churn");
 		setStepSound(soundTypeWood);
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 		setTileEntityType(TileEntityButterChurn.class);

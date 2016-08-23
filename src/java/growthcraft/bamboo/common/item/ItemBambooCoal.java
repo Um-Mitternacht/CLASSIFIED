@@ -8,7 +8,7 @@ public class ItemBambooCoal extends GrcItemBase
 	public ItemBambooCoal()
 	{
 		super();
-		setUnlocalizedName("grc.bamboo_coal");
+		setUnlocalizedName("bamboo_coal");
 		setCreativeTab(GrowthCraftBamboo.creativeTab);
 	}
 }

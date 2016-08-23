@@ -28,7 +28,7 @@ public class BlockGrapeVineBine extends BlockGrapeVineBase implements IGrowable
 		setTickRandomly(true);
 		setHardness(0.0F);
 		setStepSound(soundTypeGrass);
-		setUnlocalizedName("grc.grape_vine_bine");
+		setUnlocalizedName("grape_vine_bine");
 		setCreativeTab(null);
 	}
 
