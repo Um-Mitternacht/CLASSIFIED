@@ -29,8 +29,15 @@ import growthcraft.cellar.common.block.BlockFermentBarrel;
 import growthcraft.cellar.common.block.BlockFruitPress;
 import growthcraft.cellar.common.block.BlockFruitPresser;
 import growthcraft.cellar.common.itemblock.ItemBlockFermentBarrel;
+import growthcraft.cellar.common.tileentity.TileEntityBrewKettle;
+import growthcraft.cellar.common.tileentity.TileEntityCultureJar;
+import growthcraft.cellar.common.tileentity.TileEntityFermentBarrel;
+import growthcraft.cellar.common.tileentity.TileEntityFruitPress;
+import growthcraft.cellar.common.tileentity.TileEntityFruitPresser;
 import growthcraft.core.common.definition.BlockDefinition;
 import growthcraft.core.common.GrcModuleBlocks;
+
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class GrcCellarBlocks extends GrcModuleBlocks
 {
@@ -58,5 +65,11 @@ public class GrcCellarBlocks extends GrcModuleBlocks
 		brewKettle.register("brew_kettle");
 		fermentBarrel.register("ferment_barrel", ItemBlockFermentBarrel.class);
 		cultureJar.register("culture_jar");
+
+		GameRegistry.registerTileEntity(TileEntityFruitPress.class, "grc.tileentity.fruit_press");
+		GameRegistry.registerTileEntity(TileEntityFruitPresser.class, "grc.tileentity.fruit_presser");
+		GameRegistry.registerTileEntity(TileEntityBrewKettle.class, "grc.tileentity.brew_kettle");
+		GameRegistry.registerTileEntity(TileEntityFermentBarrel.class, "grc.tileentity.ferment_barrel");
+		GameRegistry.registerTileEntity(TileEntityCultureJar.class, "grc.tileentity.culture_jar");
 	}
 }

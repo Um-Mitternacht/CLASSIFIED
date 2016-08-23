@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2015, 2016 IceDragon200
+ * Copyright (c) 2016 IceDragon200
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,40 +21,33 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package growthcraft.cellar.common.item;
+package growthcraft.cellar.init;
 
-import growthcraft.api.core.definition.IItemStackFactory;
-import growthcraft.cellar.GrowthCraftCellar;
+import growthcraft.cellar.common.item.ItemChievDummy;
+import growthcraft.cellar.common.item.ItemWaterBag;
+import growthcraft.cellar.common.item.ItemYeast;
+import growthcraft.core.common.definition.ItemDefinition;
+import growthcraft.core.common.GrcModuleItems;
 
-import net.minecraft.item.ItemStack;
-
-public enum EnumYeast implements IItemStackFactory
+public class GrcCellarItems extends GrcModuleItems
 {
-	BREWERS,
-	LAGER,
-	BAYANUS,
-	ETHEREAL,
-	ORIGIN;
+	public ItemDefinition yeast;
+	public ItemDefinition waterBag;
+	public ItemDefinition chievItemDummy;
 
-	public static final int length = values().length;
-
-	/**
-	 * Convience method for creating the corresponding yeast stack
-	 *   example: EnumYeast.BREWERS.asStack(size)
-	 *
-	 * @param size - size of the stack to create
-	 * @return yeast stack
-	 */
-	public ItemStack asStack(int size)
+	@Override
+	public void preInit()
 	{
-		return GrowthCraftCellar.items.yeast.asStack(size, ordinal());
+		this.yeast = new ItemDefinition(new ItemYeast());
+		this.waterBag = new ItemDefinition(new ItemWaterBag());
+		this.chievItemDummy = new ItemDefinition(new ItemChievDummy());
 	}
 
-	/**
-	 * @return yeast stack, size: 1
-	 */
-	public ItemStack asStack()
+	@Override
+	public void register()
 	{
-		return asStack(1);
+		yeast.register("yeast");
+		waterBag.register("water_bag");
+		chievItemDummy.register("chiev_item_dummy");
 	}
 }
