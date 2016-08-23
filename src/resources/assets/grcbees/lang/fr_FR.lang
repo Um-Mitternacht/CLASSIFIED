@@ -3,59 +3,59 @@ itemGroup.creative_tab_grcbees=Abeilles Growthcraft
 
 # Blocks
 ## Vanilla Bee Boxes
-tile.grc.bee_box.minecraft.oak.name=Boîte d'abeille en chêne
-tile.grc.bee_box.minecraft.spruce.name=Boîte d'abeille en sapin
-tile.grc.bee_box.minecraft.birch.name=Boîte d'abeille en bouleau
-tile.grc.bee_box.minecraft.jungle.name=Boîte d'abeille en acajou
-tile.grc.bee_box.minecraft.acacia.name=Boîte d'abeille en acacia
-tile.grc.bee_box.minecraft.darkoak.name=Boîte d'abeille en chêne noir
+tile.bee_box.minecraft.oak.name=Boîte d'abeille en chêne
+tile.bee_box.minecraft.spruce.name=Boîte d'abeille en sapin
+tile.bee_box.minecraft.birch.name=Boîte d'abeille en bouleau
+tile.bee_box.minecraft.jungle.name=Boîte d'abeille en acajou
+tile.bee_box.minecraft.acacia.name=Boîte d'abeille en acacia
+tile.bee_box.minecraft.darkoak.name=Boîte d'abeille en chêne noir
 
 ## Growthcraft|Nether Bee Boxes
-tile.grc.bee_box.nether.0.name=Boîte d'abeille de malice
+tile.bee_box.nether.0.name=Boîte d'abeille de malice
 
 ## Growthcraft|Bamboo Bee Boxes
-tile.grc.bee_box.bamboo.0.name=Boîte d'abeille en bambou
+tile.bee_box.bamboo.0.name=Boîte d'abeille en bambou
 
 ## Thaumcraft Bee Boxes
-tile.grc.bee_box.thaumcraft.greatwood.name=Boîte d'abeille en bois arcanique
-tile.grc.bee_box.thaumcraft.silverwood.name=Boîte d'abeille en bois d'argent
+tile.bee_box.thaumcraft.greatwood.name=Boîte d'abeille en bois arcanique
+tile.bee_box.thaumcraft.silverwood.name=Boîte d'abeille en bois d'argent
 
 ## BiomesOPlenty
-tile.grc.bee_box.biomes_o_plenty.sacred_oak.name=tile.grc.bee_box.biomes_o_plenty.sacred_oak.name
-tile.grc.bee_box.biomes_o_plenty.cherry.name=tile.grc.bee_box.biomes_o_plenty.cherry.name
-tile.grc.bee_box.biomes_o_plenty.dark.name=tile.grc.bee_box.biomes_o_plenty.dark.name
-tile.grc.bee_box.biomes_o_plenty.fir.name=tile.grc.bee_box.biomes_o_plenty.fir.name
-tile.grc.bee_box.biomes_o_plenty.ethereal.name=tile.grc.bee_box.biomes_o_plenty.ethereal.name
-tile.grc.bee_box.biomes_o_plenty.magic.name=tile.grc.bee_box.biomes_o_plenty.magic.name
-tile.grc.bee_box.biomes_o_plenty.mangrove.name=tile.grc.bee_box.biomes_o_plenty.mangrove.name
-tile.grc.bee_box.biomes_o_plenty.palm.name=tile.grc.bee_box.biomes_o_plenty.palm.name
-tile.grc.bee_box.biomes_o_plenty.redwood.name=tile.grc.bee_box.biomes_o_plenty.redwood.name
-tile.grc.bee_box.biomes_o_plenty.willow.name=tile.grc.bee_box.biomes_o_plenty.willow.name
-tile.grc.bee_box.biomes_o_plenty.bamboo_thatching.name=tile.grc.bee_box.biomes_o_plenty.bamboo_thatching.name
-tile.grc.bee_box.biomes_o_plenty.pine.name=tile.grc.bee_box.biomes_o_plenty.pine.name
-tile.grc.bee_box.biomes_o_plenty.hell_bark.name=tile.grc.bee_box.biomes_o_plenty.hell_bark.name
-tile.grc.bee_box.biomes_o_plenty.jacaranda.name=tile.grc.bee_box.biomes_o_plenty.jacaranda.name
-tile.grc.bee_box.biomes_o_plenty.mahogany.name=tile.grc.bee_box.biomes_o_plenty.mahogany.name
+tile.bee_box.biomes_o_plenty.sacred_oak.name=tile.bee_box.biomes_o_plenty.sacred_oak.name
+tile.bee_box.biomes_o_plenty.cherry.name=tile.bee_box.biomes_o_plenty.cherry.name
+tile.bee_box.biomes_o_plenty.dark.name=tile.bee_box.biomes_o_plenty.dark.name
+tile.bee_box.biomes_o_plenty.fir.name=tile.bee_box.biomes_o_plenty.fir.name
+tile.bee_box.biomes_o_plenty.ethereal.name=tile.bee_box.biomes_o_plenty.ethereal.name
+tile.bee_box.biomes_o_plenty.magic.name=tile.bee_box.biomes_o_plenty.magic.name
+tile.bee_box.biomes_o_plenty.mangrove.name=tile.bee_box.biomes_o_plenty.mangrove.name
+tile.bee_box.biomes_o_plenty.palm.name=tile.bee_box.biomes_o_plenty.palm.name
+tile.bee_box.biomes_o_plenty.redwood.name=tile.bee_box.biomes_o_plenty.redwood.name
+tile.bee_box.biomes_o_plenty.willow.name=tile.bee_box.biomes_o_plenty.willow.name
+tile.bee_box.biomes_o_plenty.bamboo_thatching.name=tile.bee_box.biomes_o_plenty.bamboo_thatching.name
+tile.bee_box.biomes_o_plenty.pine.name=tile.bee_box.biomes_o_plenty.pine.name
+tile.bee_box.biomes_o_plenty.hell_bark.name=tile.bee_box.biomes_o_plenty.hell_bark.name
+tile.bee_box.biomes_o_plenty.jacaranda.name=tile.bee_box.biomes_o_plenty.jacaranda.name
+tile.bee_box.biomes_o_plenty.mahogany.name=tile.bee_box.biomes_o_plenty.mahogany.name
 
 ## Botania
-tile.grc.bee_box.botania.living_wood.name=tile.grc.bee_box.botania.living_wood.name
-tile.grc.bee_box.botania.dream_wood.name=tile.grc.bee_box.botania.dream_wood.name
-tile.grc.bee_box.botania.shimmer_wood.name=tile.grc.bee_box.botania.shimmer_wood.name
-tile.grc.bee_box.botania.shimmer_wood.desc=tile.grc.bee_box.botania.shimmer_wood.desc
+tile.bee_box.botania.living_wood.name=tile.bee_box.botania.living_wood.name
+tile.bee_box.botania.dream_wood.name=tile.bee_box.botania.dream_wood.name
+tile.bee_box.botania.shimmer_wood.name=tile.bee_box.botania.shimmer_wood.name
+tile.bee_box.botania.shimmer_wood.desc=tile.bee_box.botania.shimmer_wood.desc
 
 # Other Blocks
-tile.grc.bee_hive.name=Ruche d'abeille
+tile.bee_hive.name=Ruche d'abeille
 
 # Items
-item.grc.honey_comb.empty.name=Rayon de miel vide
-item.grc.honey_comb.filled.name=Rayon de miel
-item.grc.honey_jar.name=Miel
-item.grc.bee.name=Abeille
-item.grc.fluid_bottle_honey.name=item.grc.fluid_bottle_honey.name
-item.grc.fluid_bucket_honey.name=item.grc.fluid_bucket_honey.name
-item.grc.bees_wax.normal.name=item.grc.bees_wax.normal.name
-item.grc.bees_wax.red.name=item.grc.bees_wax.red.name
-item.grc.bees_wax.black.name=item.grc.bees_wax.black.name
+item.honey_comb.empty.name=Rayon de miel vide
+item.honey_comb.filled.name=Rayon de miel
+item.honey_jar.name=Miel
+item.bee.name=Abeille
+item.fluid_bottle_honey.name=item.fluid_bottle_honey.name
+item.fluid_bucket_honey.name=item.fluid_bucket_honey.name
+item.bees_wax.normal.name=item.bees_wax.normal.name
+item.bees_wax.red.name=item.bees_wax.red.name
+item.bees_wax.black.name=item.bees_wax.black.name
 
 # Containers
 container.grc.beeBox=Boîte d'abeille
@@ -71,7 +71,7 @@ fluid.grc.honey_mead_intoxicated=fluid.grc.honey_mead_intoxicated
 fluid.grc.honey_mead_poisoned=fluid.grc.honey_mead_poisoned
 
 # Fluid Bottles
-item.grc.BottleFluidHoney.name=item.grc.BottleFluidHoney.name
+item.BottleFluidHoney.name=item.BottleFluidHoney.name
 
 # Fluid Buckets
 item.bucket.fluid.grc.honey.name=item.bucket.fluid.grc.honey.name
@@ -84,7 +84,7 @@ item.bucket.fluid.grc.honey_mead_intoxicated.name=item.bucket.fluid.grc.honey_me
 item.bucket.fluid.grc.honey_mead_poisoned.name=item.bucket.fluid.grc.honey_mead_poisoned.name
 
 # Fluid Blocks
-tile.grc.fluid_block_honey.name=tile.grc.fluid_block_honey.name
+tile.fluid_block_honey.name=tile.fluid_block_honey.name
 tile.fluid.grc.honey_mead_young.name=Hydromel
 tile.fluid.grc.honey_mead_fermented.name=Hydromel
 tile.fluid.grc.honey_mead_potent.name=Hydromel

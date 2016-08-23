@@ -1,5 +1,5 @@
 # Blocks
-tile.grc.fish_trap.name=Fish Trap
+tile.fish_trap.name=Fish Trap
 
 # Containers
 container.grc.fish_trap=Fish Trap

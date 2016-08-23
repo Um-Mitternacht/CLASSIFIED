@@ -1,26 +1,26 @@
 # Creative Tabs
 itemGroup.creative_tab_grcbamboo=Growthcraft|竹
 # Blocks
-tile.grc.bamboo_block.name=竹子
-tile.grc.bamboo_door.name=竹门
-tile.grc.bamboo_fence.name=竹篱
-tile.grc.bamboo_fence_gate.name=竹篱笆门
-tile.grc.bamboo_fence_rope.name=带有绳子的竹篱
-tile.grc.bamboo_leaves.name=竹叶
-tile.grc.bamboo_scaffold.name=竹脚手架
-tile.grc.bamboo_shoot.name=竹笋
-tile.grc.bamboo_slab.name=竹板台阶
-tile.grc.bamboo_stairs.name=竹板楼梯
-tile.grc.bamboo_stalk.name=竹子
-tile.grc.bamboo_wall.name=竹板墙壁
+tile.bamboo_block.name=竹子
+tile.bamboo_door.name=竹门
+tile.bamboo_fence.name=竹篱
+tile.bamboo_fence_gate.name=竹篱笆门
+tile.bamboo_fence_rope.name=带有绳子的竹篱
+tile.bamboo_leaves.name=竹叶
+tile.bamboo_scaffold.name=竹脚手架
+tile.bamboo_shoot.name=竹笋
+tile.bamboo_slab.name=竹板台阶
+tile.bamboo_stairs.name=竹板楼梯
+tile.bamboo_stalk.name=竹子
+tile.bamboo_wall.name=竹板墙壁
 
 # Items
-item.grc.bamboo.name=竹子
-item.grc.bamboo_door_item.name=竹门
-item.grc.bamboo_slab.name=竹台阶
-item.grc.bamboo_raft.name=竹筏
-item.grc.bamboo_coal.name=竹炭
-item.grc.bamboo_shoot_food.name=竹笋
+item.bamboo.name=竹子
+item.bamboo_door_item.name=竹门
+item.bamboo_slab.name=竹台阶
+item.bamboo_raft.name=竹筏
+item.bamboo_coal.name=竹炭
+item.bamboo_shoot_food.name=竹笋
 
 # Entities
 entity.Growthcraft|Bamboo.bamboo_raft.name=竹筏

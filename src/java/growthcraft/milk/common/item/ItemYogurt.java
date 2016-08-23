@@ -54,7 +54,7 @@ public class ItemYogurt extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getEnumYogurt(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getEnumYogurt(stack).getBasename();
 	}
 
 	@Override

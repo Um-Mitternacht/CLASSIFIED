@@ -54,7 +54,7 @@ public class ItemButter extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getEnumButter(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getEnumButter(stack).getBasename();
 	}
 
 	@Override

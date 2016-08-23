@@ -54,7 +54,7 @@ public class ItemIceCream extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getEnumIceCream(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getEnumIceCream(stack).getBasename();
 	}
 
 	@Override

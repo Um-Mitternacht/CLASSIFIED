@@ -2,16 +2,16 @@
 itemGroup.creative_tab_grcgrapes=Growthcraft: Виноград
 
 # Blocks
-tile.grc.grape_vine_bine.name=Виноградный ствол
-tile.grc.grape_vine_trunk.name=Виноградный ствол
-tile.grc.grape_leaves.name=Виноградная листва
-tile.grc.grape_block.name=Обыкновенный виноград
+tile.grape_vine_bine.name=Виноградный ствол
+tile.grape_vine_trunk.name=Виноградный ствол
+tile.grape_leaves.name=Виноградная листва
+tile.grape_block.name=Обыкновенный виноград
 
 # Items
-item.grc.grapes.purple.name=Обыкновенный виноград
-item.grc.grapes.green.name=Белый виноград
-item.grc.grapes.red.name=Красный виноград
-item.grc.grape_seeds.name=Семена обыкновенного винограда
+item.grapes.purple.name=Обыкновенный виноград
+item.grapes.green.name=Белый виноград
+item.grapes.red.name=Красный виноград
+item.grape_seeds.name=Семена обыкновенного винограда
 
 # Fluids
 fluid.grc.grape_wine_young=Виноградное вино

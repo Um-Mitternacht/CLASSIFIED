@@ -46,7 +46,7 @@ public class CheeseCurd implements INBTSerializableContext, IStreamable
 
 	public int getId()
 	{
-		return cheese.meta;
+		return cheese.getMetadata();
 	}
 
 	public float getAgeProgress()

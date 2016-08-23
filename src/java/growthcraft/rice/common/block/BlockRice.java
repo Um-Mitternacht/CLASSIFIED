@@ -213,13 +213,13 @@ public class BlockRice extends GrcBlockBase implements IPaddyCrop, ICropDataProv
 	@SideOnly(Side.CLIENT)
 	public Item getItem(World world, BlockPos pos)
 	{
-		return GrowthCraftRice.rice.getItem();
+		return GrowthCraftRice.items.rice.getItem();
 	}
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random random, int fortune)
 	{
-		return GrowthCraftRice.rice.getItem();
+		return GrowthCraftRice.items.rice.getItem();
 	}
 
 	@Override
@@ -238,7 +238,7 @@ public class BlockRice extends GrcBlockBase implements IPaddyCrop, ICropDataProv
 		{
 			for (int n = 0; n < 3 + fortune; n++)
 			{
-				ret.add(GrowthCraftRice.rice.asStack(1));
+				ret.add(GrowthCraftRice.items.rice.asStack(1));
 			}
 		}
 

@@ -3,59 +3,59 @@ itemGroup.creative_tab_grcbees=Growthcraft Bees
 
 # Blocks
 ## Vanilla Bee Boxes
-tile.grc.bee_box.minecraft.oak.name=Oak Bee Box
-tile.grc.bee_box.minecraft.spruce.name=Spruce Bee Box
-tile.grc.bee_box.minecraft.birch.name=Birch Bee Box
-tile.grc.bee_box.minecraft.jungle.name=Jungle Bee Box
-tile.grc.bee_box.minecraft.acacia.name=Acacia Bee Box
-tile.grc.bee_box.minecraft.darkoak.name=Dark Oak Bee Box
+tile.bee_box.minecraft.oak.name=Oak Bee Box
+tile.bee_box.minecraft.spruce.name=Spruce Bee Box
+tile.bee_box.minecraft.birch.name=Birch Bee Box
+tile.bee_box.minecraft.jungle.name=Jungle Bee Box
+tile.bee_box.minecraft.acacia.name=Acacia Bee Box
+tile.bee_box.minecraft.darkoak.name=Dark Oak Bee Box
 
 ## Growthcraft|Nether Bee Boxes
-tile.grc.bee_box.nether.0.name=Malice Bee Box
+tile.bee_box.nether.0.name=Malice Bee Box
 
 ## Growthcraft|Bamboo Bee Boxes
-tile.grc.bee_box.bamboo.0.name=Bamboo Bee Box
+tile.bee_box.bamboo.0.name=Bamboo Bee Box
 
 ## Thaumcraft Bee Boxes
-tile.grc.bee_box.thaumcraft.greatwood.name=Greatwood Bee Box
-tile.grc.bee_box.thaumcraft.silverwood.name=Silverwood Bee Box
+tile.bee_box.thaumcraft.greatwood.name=Greatwood Bee Box
+tile.bee_box.thaumcraft.silverwood.name=Silverwood Bee Box
 
 ## BiomesOPlenty
-tile.grc.bee_box.biomes_o_plenty.sacred_oak.name=Sacred Oak Bee Box
-tile.grc.bee_box.biomes_o_plenty.cherry.name=Cherry Bee Box
-tile.grc.bee_box.biomes_o_plenty.dark.name=Dark Bee Box
-tile.grc.bee_box.biomes_o_plenty.fir.name=Fir Bee Box
-tile.grc.bee_box.biomes_o_plenty.ethereal.name=Ethereal Bee Box
-tile.grc.bee_box.biomes_o_plenty.magic.name=Magic Bee Box
-tile.grc.bee_box.biomes_o_plenty.mangrove.name=Mangrove Bee Box
-tile.grc.bee_box.biomes_o_plenty.palm.name=Palm Bee Box
-tile.grc.bee_box.biomes_o_plenty.redwood.name=Redwood Bee Box
-tile.grc.bee_box.biomes_o_plenty.willow.name=Willow Bee Box
-tile.grc.bee_box.biomes_o_plenty.bamboo_thatching.name=Bamboo Thatch Bee Box
-tile.grc.bee_box.biomes_o_plenty.pine.name=Pine Bee Box
-tile.grc.bee_box.biomes_o_plenty.hell_bark.name=Hell Bark Bee Box
-tile.grc.bee_box.biomes_o_plenty.jacaranda.name=Jacaranda Bee Box
-tile.grc.bee_box.biomes_o_plenty.mahogany.name=Mahogany Bee Box
+tile.bee_box.biomes_o_plenty.sacred_oak.name=Sacred Oak Bee Box
+tile.bee_box.biomes_o_plenty.cherry.name=Cherry Bee Box
+tile.bee_box.biomes_o_plenty.dark.name=Dark Bee Box
+tile.bee_box.biomes_o_plenty.fir.name=Fir Bee Box
+tile.bee_box.biomes_o_plenty.ethereal.name=Ethereal Bee Box
+tile.bee_box.biomes_o_plenty.magic.name=Magic Bee Box
+tile.bee_box.biomes_o_plenty.mangrove.name=Mangrove Bee Box
+tile.bee_box.biomes_o_plenty.palm.name=Palm Bee Box
+tile.bee_box.biomes_o_plenty.redwood.name=Redwood Bee Box
+tile.bee_box.biomes_o_plenty.willow.name=Willow Bee Box
+tile.bee_box.biomes_o_plenty.bamboo_thatching.name=Bamboo Thatch Bee Box
+tile.bee_box.biomes_o_plenty.pine.name=Pine Bee Box
+tile.bee_box.biomes_o_plenty.hell_bark.name=Hell Bark Bee Box
+tile.bee_box.biomes_o_plenty.jacaranda.name=Jacaranda Bee Box
+tile.bee_box.biomes_o_plenty.mahogany.name=Mahogany Bee Box
 
 ## Botania
-tile.grc.bee_box.botania.living_wood.name=Livingwood Bee Box
-tile.grc.bee_box.botania.dream_wood.name=Dreamwood Bee Box
-tile.grc.bee_box.botania.shimmer_wood.name=Shimmerwood Bee Box
-tile.grc.bee_box.botania.shimmer_wood.desc=ZOMG Colors!
+tile.bee_box.botania.living_wood.name=Livingwood Bee Box
+tile.bee_box.botania.dream_wood.name=Dreamwood Bee Box
+tile.bee_box.botania.shimmer_wood.name=Shimmerwood Bee Box
+tile.bee_box.botania.shimmer_wood.desc=ZOMG Colors!
 
 # Other Blocks
-tile.grc.bee_hive.name=Bee Hive
+tile.bee_hive.name=Bee Hive
 
 # Items
-item.grc.honey_comb.empty.name=Empty Honeycomb
-item.grc.honey_comb.filled.name=Honeycomb
-item.grc.honey_jar.name=Honey
-item.grc.bee.name=Bee
-item.grc.fluid_bottle_honey.name=Honey Bottle
-item.grc.fluid_bucket_honey.name=Honey Bucket
-item.grc.bees_wax.normal.name=Beeswax
-item.grc.bees_wax.red.name=Red Beeswax
-item.grc.bees_wax.black.name=Black Beeswax
+item.honey_comb.empty.name=Empty Honeycomb
+item.honey_comb.filled.name=Honeycomb
+item.honey_jar.name=Honey
+item.bee.name=Bee
+item.fluid_bottle_honey.name=Honey Bottle
+item.fluid_bucket_honey.name=Honey Bucket
+item.bees_wax.normal.name=Beeswax
+item.bees_wax.red.name=Red Beeswax
+item.bees_wax.black.name=Black Beeswax
 
 # Containers
 container.grc.beeBox=Bee Box
@@ -71,7 +71,7 @@ fluid.grc.honey_mead_intoxicated=Mead
 fluid.grc.honey_mead_poisoned=Mead
 
 # Fluid Bottles
-item.grc.BottleFluidHoney.name=Honey
+item.BottleFluidHoney.name=Honey
 
 # Fluid Buckets
 item.bucket.fluid.grc.honey.name=Honey Bucket
@@ -84,7 +84,7 @@ item.bucket.fluid.grc.honey_mead_intoxicated.name=Mead Bucket
 item.bucket.fluid.grc.honey_mead_poisoned.name=Mead Bucket
 
 # Fluid Blocks
-tile.grc.fluid_block_honey.name=Honey
+tile.fluid_block_honey.name=Honey
 tile.fluid.grc.honey_mead_young.name=Mead Must
 tile.fluid.grc.honey_mead_fermented.name=Mead
 tile.fluid.grc.honey_mead_potent.name=Mead

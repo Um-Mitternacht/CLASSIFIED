@@ -33,18 +33,28 @@ import net.minecraft.item.ItemStack;
 
 public enum EnumBeesWax implements IItemStackFactory
 {
-	NORMAL("normal"),
-	RED("red"),
-	BLACK("black");
+	NORMAL(0, "normal"),
+	RED(1, "red"),
+	BLACK(2, "black");
 
 	public static List<EnumBeesWax> VALUES = Arrays.asList(values());
-	public final String basename;
-	public final int meta;
+	private final String basename;
+	private final int meta;
 
-	private EnumBeesWax(String bsn)
+	private EnumBeesWax(int p_meta, String bsn)
 	{
 		this.basename = bsn;
-		this.meta = ordinal();
+		this.meta = p_meta;
+	}
+
+	public String getBasename()
+	{
+		return basename;
+	}
+
+	public int getMetadata()
+	{
+		return meta;
 	}
 
 	public ItemStack asStack(int size)

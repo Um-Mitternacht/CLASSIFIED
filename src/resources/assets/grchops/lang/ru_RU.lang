@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.hop_vine.name=Обычный хмель
+tile.hop_vine.name=Обычный хмель
 
 # Items
-item.grc.hops.name=Обычный хмель
-item.grc.hop_seeds.name=Семена обычного хмеля
+item.hops.name=Обычный хмель
+item.hop_seeds.name=Семена обычного хмеля
 
 # Fluids
 fluid.grc.hop_ale_young=Эль

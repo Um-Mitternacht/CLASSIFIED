@@ -116,7 +116,12 @@ public class GrowthCraftCore
 	{
 		config.setLogger(logger);
 		config.load(event.getModConfigurationDirectory(), "growthcraft/core.conf");
-		if (config.debugEnabled) logger.info("Pre-Initializing %s", MOD_ID);
+		if (config.debugEnabled)
+		{
+			logger.info("Pre-Initializing %s", MOD_ID);
+			CoreRegistry.instance().setLogger(logger);
+			modules.setLogger(logger);
+		}
 		modules.add(blocks);
 		modules.add(items);
 		modules.add(fluids);
@@ -128,13 +133,7 @@ public class GrowthCraftCore
 		if (config.enableThaumcraftIntegration) modules.add(new growthcraft.core.integration.ThaumcraftModule());
 		if (config.enableWailaIntegration) modules.add(new growthcraft.core.integration.Waila());
 		if (config.enableAppleCoreIntegration) modules.add(new growthcraft.core.integration.AppleCore());
-		//if (config.enableNEIIntegration) modules.add(new growthcraft.core.integration.nei.NEIModule());
 		modules.add(CommonProxy.instance);
-		if (config.debugEnabled)
-		{
-			CoreRegistry.instance().setLogger(logger);
-			modules.setLogger(logger);
-		}
 		modules.freeze();
 		creativeTab = new CreativeTabsGrowthcraft("creative_tab_grccore");
 

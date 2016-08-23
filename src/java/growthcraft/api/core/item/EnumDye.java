@@ -23,12 +23,13 @@
  */
 package growthcraft.api.core.item;
 
-import java.util.Locale;
 import com.google.common.base.CaseFormat;
 
 import growthcraft.api.core.definition.IItemStackFactory;
 
+import net.minecraft.block.material.MapColor;
 import net.minecraft.init.Items;
+import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 
 /**
@@ -36,22 +37,22 @@ import net.minecraft.item.ItemStack;
  */
 public enum EnumDye implements IItemStackFactory
 {
-	BLACK,
-	RED,
-	GREEN,
-	BROWN,
-	BLUE,
-	PURPLE,
-	CYAN,
-	LIGHT_GRAY,
-	GRAY,
-	PINK,
-	LIME,
-	YELLOW,
-	LIGHT_BLUE,
-	MAGENTA,
-	ORANGE,
-	WHITE;
+	BLACK(EnumDyeColor.BLACK),
+	RED(EnumDyeColor.RED),
+	GREEN(EnumDyeColor.GREEN),
+	BROWN(EnumDyeColor.BROWN),
+	BLUE(EnumDyeColor.BLUE),
+	PURPLE(EnumDyeColor.PURPLE),
+	CYAN(EnumDyeColor.CYAN),
+	SILVER(EnumDyeColor.SILVER),
+	GRAY(EnumDyeColor.GRAY),
+	PINK(EnumDyeColor.PINK),
+	LIME(EnumDyeColor.LIME),
+	YELLOW(EnumDyeColor.YELLOW),
+	LIGHT_BLUE(EnumDyeColor.LIGHT_BLUE),
+	MAGENTA(EnumDyeColor.MAGENTA),
+	ORANGE(EnumDyeColor.ORANGE),
+	WHITE(EnumDyeColor.WHITE);
 
 	// Aliases
 	public static final EnumDye INK_SAC = BLACK;
@@ -59,20 +60,63 @@ public enum EnumDye implements IItemStackFactory
 	public static final EnumDye COCOA_BEANS = BROWN;
 	public static final EnumDye LAPIS_LAZULI = BLUE;
 	public static final EnumDye BONE_MEAL = WHITE;
-	public static final EnumDye[] VALUES = values();
+	private static final EnumDye[] META_LOOKUP = new EnumDye[values().length];
+	private static final EnumDye[] DYE_DMG_LOOKUP = new EnumDye[values().length];
 
-	public final int meta;
-	public final String name;
-
-	private EnumDye()
+	static
 	{
-		this.name = name().toLowerCase(Locale.ENGLISH);
-		this.meta = ordinal();
+		for (EnumDye dye : values())
+		{
+			META_LOOKUP[dye.getMetadata()] = dye;
+			DYE_DMG_LOOKUP[dye.getDyeDamage()] = dye;
+		}
+	}
+
+	private final EnumDyeColor baseDye;
+
+	private EnumDye(EnumDyeColor base)
+	{
+		this.baseDye = base;
+	}
+
+	public int getMetadata()
+	{
+		return baseDye.getMetadata();
+	}
+
+	public int getDyeDamage()
+	{
+		return baseDye.getDyeDamage();
+	}
+
+	public String getUnlocalizedName()
+	{
+		return baseDye.getUnlocalizedName();
+	}
+
+	public String toString()
+	{
+		return baseDye.toString();
+	}
+
+	public String getName()
+	{
+		return baseDye.getName();
+	}
+
+	public String getOreName()
+	{
+		return String.format("dye%s", CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, getName()));
+	}
+
+	public MapColor getMapColor()
+	{
+		return baseDye.getMapColor();
 	}
 
 	public ItemStack asStack(int size)
 	{
-		return new ItemStack(Items.dye, size, meta);
+		return new ItemStack(Items.dye, size, getDyeDamage());
 	}
 
 	public ItemStack asStack()
@@ -80,17 +124,23 @@ public enum EnumDye implements IItemStackFactory
 		return asStack(1);
 	}
 
-	public String getOreName()
+	public static EnumDye byDyeDamage(int damage)
 	{
-		return String.format("dye%s", CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, name()));
+		if (damage < 0 || damage >= DYE_DMG_LOOKUP.length)
+		{
+			damage = 0;
+		}
+
+		return DYE_DMG_LOOKUP[damage];
 	}
 
-	public static EnumDye getByMeta(int meta)
+	public static EnumDye byMetadata(int meta)
 	{
-		if (meta < 0 || meta >= VALUES.length)
+		if (meta < 0 || meta >= META_LOOKUP.length)
 		{
-			return BLACK;
+			meta = 0;
 		}
-		return VALUES[meta];
+
+		return META_LOOKUP[meta];
 	}
 }

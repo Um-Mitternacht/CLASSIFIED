@@ -2,37 +2,37 @@
 itemGroup.creative_tab_grccore=Growthcraft
 
 # Blocks
-tile.grc.acacia_fence_rope.name=Fence with Rope (Acacia)
-tile.grc.birch_fence_rope.name=Fence with Rope (Birch)
-tile.grc.dark_oak_fence_rope.name=Fence with Rope (Dark Oak)
-tile.grc.jungle_fence_rope.name=Fence with Rope (Jungle)
-tile.grc.oak_fence_rope.name=Fence with Rope (Oak)
-tile.grc.spruce_fence_rope.name=Fence with Rope (Spruce)
-tile.grc.nether_brick_fence_rope.name=Fence with Rope (Nether Brick)
-tile.grc.rope_block.name=Rope
-tile.grc.salt_block.name=Salt Block
+tile.acacia_fence_rope.name=Fence with Rope (Acacia)
+tile.birch_fence_rope.name=Fence with Rope (Birch)
+tile.dark_oak_fence_rope.name=Fence with Rope (Dark Oak)
+tile.jungle_fence_rope.name=Fence with Rope (Jungle)
+tile.oak_fence_rope.name=Fence with Rope (Oak)
+tile.spruce_fence_rope.name=Fence with Rope (Spruce)
+tile.nether_brick_fence_rope.name=Fence with Rope (Nether Brick)
+tile.rope_block.name=Rope
+tile.salt_block.name=Salt Block
 
 # Items
-item.grc.rope.name=Rope
-item.grc.salt.name=Salt
-item.grc.bucket_salt.name=Salt Bucket
-item.grc.bottle_salt.name=Salt Bottle
-item.grc.crowbar.black.name=Crowbar (Black)
-item.grc.crowbar.red.name=Crowbar (Red)
-item.grc.crowbar.green.name=Crowbar (Green)
-item.grc.crowbar.brown.name=Crowbar (Brown)
-item.grc.crowbar.blue.name=Crowbar (Blue)
-item.grc.crowbar.purple.name=Crowbar (Purple)
-item.grc.crowbar.cyan.name=Crowbar (Cyan)
-item.grc.crowbar.light_gray.name=Crowbar (Light Gray)
-item.grc.crowbar.gray.name=Crowbar (Gray)
-item.grc.crowbar.pink.name=Crowbar (Pink)
-item.grc.crowbar.lime.name=Crowbar (Lime)
-item.grc.crowbar.yellow.name=Crowbar (Yellow)
-item.grc.crowbar.light_blue.name=Crowbar (Light Blue)
-item.grc.crowbar.magenta.name=Crowbar (Magenta)
-item.grc.crowbar.orange.name=Crowbar (Orange)
-item.grc.crowbar.white.name=Crowbar (White)
+item.rope.name=Rope
+item.salt.name=Salt
+item.bucket_salt.name=Salt Bucket
+item.bottle_salt.name=Salt Bottle
+item.crowbar.black.name=Crowbar (Black)
+item.crowbar.red.name=Crowbar (Red)
+item.crowbar.green.name=Crowbar (Green)
+item.crowbar.brown.name=Crowbar (Brown)
+item.crowbar.blue.name=Crowbar (Blue)
+item.crowbar.purple.name=Crowbar (Purple)
+item.crowbar.cyan.name=Crowbar (Cyan)
+item.crowbar.silver.name=Crowbar (Light Gray)
+item.crowbar.gray.name=Crowbar (Gray)
+item.crowbar.pink.name=Crowbar (Pink)
+item.crowbar.lime.name=Crowbar (Lime)
+item.crowbar.yellow.name=Crowbar (Yellow)
+item.crowbar.light_blue.name=Crowbar (Light Blue)
+item.crowbar.magenta.name=Crowbar (Magenta)
+item.crowbar.orange.name=Crowbar (Orange)
+item.crowbar.white.name=Crowbar (White)
 
 # Fluids
 fluid.tile.water=Water
@@ -40,8 +40,8 @@ fluid.tile.lava=Lava
 
 ## Salt Water
 fluid.grc.salt_water=Salt Water
-tile.grccore.fluid_block_salt_water.name=Salt Water
-item.grc.fluid_bottle_salt_water.name=Salt Water Bottle
+tile.ore.fluid_block_salt_water.name=Salt Water
+item.fluid_bottle_salt_water.name=Salt Water Bottle
 item.bucket.fluid.grc.salt_water.name=Salt Water Bucket
 
 # Other

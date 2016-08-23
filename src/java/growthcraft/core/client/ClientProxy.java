@@ -23,6 +23,7 @@
  */
 package growthcraft.core.client;
 
+import growthcraft.api.core.item.EnumDye;
 import growthcraft.core.client.renderer.block.statemap.GrcDomainStateMapper;
 import growthcraft.core.client.util.GrcModelRegistry;
 import growthcraft.core.common.CommonProxy;
@@ -35,6 +36,17 @@ public class ClientProxy extends CommonProxy
 		final GrcModelRegistry gmr = GrcModelRegistry.instance();
 		gmr.registerAll(GrowthCraftCore.blocks.all, 0, GrowthCraftCore.resources);
 		gmr.setCustomStateMapperForAll(GrowthCraftCore.blocks.all, new GrcDomainStateMapper(GrowthCraftCore.resources));
+		if (GrowthCraftCore.items.crowbar != null)
+		{
+			for (EnumDye dye : EnumDye.values())
+			{
+				gmr.register(GrowthCraftCore.items.crowbar, dye.getDyeDamage(), GrowthCraftCore.resources.createModel("crowbar_" + dye.getName(), "inventory"));
+			}
+		}
+		gmr.register(GrowthCraftCore.items.rope, 0, GrowthCraftCore.resources);
+		gmr.register(GrowthCraftCore.items.salt, 0, GrowthCraftCore.resources);
+		gmr.register(GrowthCraftCore.items.saltBottle, 0, GrowthCraftCore.resources);
+		gmr.register(GrowthCraftCore.items.saltBucket, 0, GrowthCraftCore.resources);
 	}
 
 	@Override

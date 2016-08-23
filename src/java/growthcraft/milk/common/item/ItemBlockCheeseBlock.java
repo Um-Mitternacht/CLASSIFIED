@@ -66,9 +66,9 @@ public class ItemBlockCheeseBlock extends ItemBlock implements IItemTileBlock
 	{
 		final NBTTagCompound tag = getTileTagCompoundABS(stack);
 		final EnumCheeseType type = getCheeseType(stack);
-		if (stack.getItemDamage() != type.meta)
+		if (stack.getItemDamage() != type.getMetadata())
 		{
-			stack.setItemDamage(type.meta);
+			stack.setItemDamage(type.getMetadata());
 		}
 		return tag;
 	}
@@ -89,8 +89,8 @@ public class ItemBlockCheeseBlock extends ItemBlock implements IItemTileBlock
 	public String getUnlocalizedName(ItemStack stack)
 	{
 		return super.getUnlocalizedName(stack) +
-			"." + getCheeseType(stack).name +
-			"." + getCheeseStage(stack).name;
+			"." + getCheeseType(stack).getBasename() +
+			"." + getCheeseStage(stack).getName();
 	}
 
 	public int getSlices(ItemStack stack)

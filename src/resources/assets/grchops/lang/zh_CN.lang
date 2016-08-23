@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.hop_vine.name=啤酒花
+tile.hop_vine.name=啤酒花
 
 # Items
-item.grc.hops.name=啤酒花
-item.grc.hop_seeds.name=啤酒花种子
+item.hops.name=啤酒花
+item.hop_seeds.name=啤酒花种子
 
 # Fluids
 fluid.grc.hop_ale_young=麦芽酒

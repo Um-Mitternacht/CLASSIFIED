@@ -23,26 +23,29 @@
  */
 package growthcraft.grapes.common.item;
 
-import java.util.Locale;
-
 import growthcraft.grapes.GrowthCraftGrapes;
 
 import net.minecraft.item.ItemStack;
 
 public enum EnumGrapes
 {
-	PURPLE,
-	GREEN,
-	RED;
+	PURPLE(0, "purple"),
+	GREEN(1, "green"),
+	RED(2, "red");
 
 	public static final EnumGrapes[] VALUES = values();
 	public final String name;
 	public final int meta;
 
-	private EnumGrapes()
+	private EnumGrapes(int p_meta, String p_name)
 	{
-		this.name = name().toLowerCase(Locale.ENGLISH);
-		this.meta = ordinal();
+		this.name = p_name;
+		this.meta = p_meta;
+	}
+
+	public String getBasename()
+	{
+		return name;
 	}
 
 	public ItemStack asStack(int size)

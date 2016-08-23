@@ -1,5 +1,5 @@
 # Blocks
-tile.grc.fish_trap.name=Armadilha de Pesca
+tile.fish_trap.name=Armadilha de Pesca
 
 # Containers
 container.grc.fish_trap=Armadilha de Pesca

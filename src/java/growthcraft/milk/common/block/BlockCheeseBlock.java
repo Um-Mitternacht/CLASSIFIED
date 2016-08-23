@@ -84,7 +84,7 @@ public class BlockCheeseBlock extends GrcBlockContainer
 	@Override
 	public int getMetaFromState(IBlockState state)
 	{
-		return state.getValue(TYPE).meta;
+		return state.getValue(TYPE).getMetadata();
 	}
 
 	@Override
@@ -107,7 +107,7 @@ public class BlockCheeseBlock extends GrcBlockContainer
 		{
 			return te.asItemStack();
 		}
-		return new ItemStack(this, 1, state.getValue(TYPE).meta);
+		return new ItemStack(this, 1, state.getValue(TYPE).getMetadata());
 	}
 
 	@Override
@@ -180,7 +180,7 @@ public class BlockCheeseBlock extends GrcBlockContainer
 			{
 				if (cheese.hasBlock())
 				{
-					final ItemStack stack = new ItemStack(item, 1, cheese.meta);
+					final ItemStack stack = new ItemStack(item, 1, cheese.getMetadata());
 					// This causes the NBT data to refresh
 					ib.getTileTagCompound(stack);
 					list.add(stack);

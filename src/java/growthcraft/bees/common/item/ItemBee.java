@@ -8,7 +8,7 @@ public class ItemBee extends GrcItemBase
 	public ItemBee()
 	{
 		super();
-		setUnlocalizedName("grc.bee");
+		setUnlocalizedName("bee");
 		setCreativeTab(GrowthCraftBees.tab);
 	}
 }

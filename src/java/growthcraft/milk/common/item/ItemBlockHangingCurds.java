@@ -77,9 +77,9 @@ public class ItemBlockHangingCurds extends ItemBlock implements IItemTileBlock
 	{
 		final NBTTagCompound tag = getTileTagCompoundABS(stack);
 		final EnumCheeseType type = getCheeseType(stack);
-		if (stack.getItemDamage() != type.meta)
+		if (stack.getItemDamage() != type.getMetadata())
 		{
-			stack.setItemDamage(type.meta);
+			stack.setItemDamage(type.getMetadata());
 		}
 		return tag;
 	}
@@ -98,7 +98,7 @@ public class ItemBlockHangingCurds extends ItemBlock implements IItemTileBlock
 	public String getUnlocalizedName(ItemStack stack)
 	{
 		String str = super.getUnlocalizedName(stack);
-		str += "." + getCheeseType(stack).name;
+		str += "." + getCheeseType(stack).getBasename();
 		if (isDried(stack)) str += ".dried";
 		return str;
 	}

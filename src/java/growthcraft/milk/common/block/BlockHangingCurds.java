@@ -141,7 +141,7 @@ public class BlockHangingCurds extends GrcBlockContainer
 			{
 				if (cheese.hasCurdBlock())
 				{
-					final ItemStack stack = new ItemStack(item, 1, cheese.meta);
+					final ItemStack stack = new ItemStack(item, 1, cheese.getMetadata());
 					ib.getTileTagCompound(stack);
 					list.add(stack);
 				}

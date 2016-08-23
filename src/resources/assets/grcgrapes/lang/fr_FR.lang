@@ -2,16 +2,16 @@
 itemGroup.creative_tab_grcgrapes=itemGroup.creative_tab_grcgrapes
 
 # Blocks
-tile.grc.grape_vine_bine.name=Pied de vigne
-tile.grc.grape_vine_trunk.name=Charpente de vigne
-tile.grc.grape_leaves.name=Feuilles de vigne
-tile.grc.grape_block.name=Raisin commun
+tile.grape_vine_bine.name=Pied de vigne
+tile.grape_vine_trunk.name=Charpente de vigne
+tile.grape_leaves.name=Feuilles de vigne
+tile.grape_block.name=Raisin commun
 
 # Items
-item.grc.grapes.purple.name=Raisin commun
-item.grc.grapes.green.name=item.grc.grapes.green.name
-item.grc.grapes.red.name=item.grc.grapes.red.name
-item.grc.grape_seeds.name=Pépins de raisin commun
+item.grapes.purple.name=Raisin commun
+item.grapes.green.name=item.grapes.green.name
+item.grapes.red.name=item.grapes.red.name
+item.grape_seeds.name=Pépins de raisin commun
 
 # Fluids
 fluid.grc.grape_wine_young=Vin

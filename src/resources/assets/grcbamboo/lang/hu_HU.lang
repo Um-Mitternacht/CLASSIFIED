@@ -1,26 +1,26 @@
 # Creative Tabs
 itemGroup.creative_tab_grcbamboo=itemGroup.creative_tab_grcbamboo
 # Blocks
-tile.grc.bamboo_block.name=tile.grc.bamboo_block.name
-tile.grc.bamboo_door.name=tile.grc.bamboo_door.name
-tile.grc.bamboo_fence.name=tile.grc.bamboo_fence.name
-tile.grc.bamboo_fence_gate.name=tile.grc.bamboo_fence_gate.name
-tile.grc.bamboo_fence_rope.name=tile.grc.bamboo_fence_rope.name
-tile.grc.bamboo_leaves.name=tile.grc.bamboo_leaves.name
-tile.grc.bamboo_scaffold.name=tile.grc.bamboo_scaffold.name
-tile.grc.bamboo_shoot.name=tile.grc.bamboo_shoot.name
-tile.grc.bamboo_slab.name=tile.grc.bamboo_slab.name
-tile.grc.bamboo_stairs.name=tile.grc.bamboo_stairs.name
-tile.grc.bamboo_stalk.name=tile.grc.bamboo_stalk.name
-tile.grc.bamboo_wall.name=tile.grc.bamboo_wall.name
+tile.bamboo_block.name=tile.bamboo_block.name
+tile.bamboo_door.name=tile.bamboo_door.name
+tile.bamboo_fence.name=tile.bamboo_fence.name
+tile.bamboo_fence_gate.name=tile.bamboo_fence_gate.name
+tile.bamboo_fence_rope.name=tile.bamboo_fence_rope.name
+tile.bamboo_leaves.name=tile.bamboo_leaves.name
+tile.bamboo_scaffold.name=tile.bamboo_scaffold.name
+tile.bamboo_shoot.name=tile.bamboo_shoot.name
+tile.bamboo_slab.name=tile.bamboo_slab.name
+tile.bamboo_stairs.name=tile.bamboo_stairs.name
+tile.bamboo_stalk.name=tile.bamboo_stalk.name
+tile.bamboo_wall.name=tile.bamboo_wall.name
 
 # Items
-item.grc.bamboo.name=item.grc.bamboo.name
-item.grc.bamboo_door_item.name=item.grc.bamboo_door_item.name
-item.grc.bamboo_slab.name=item.grc.bamboo_slab.name
-item.grc.bamboo_raft.name=item.grc.bamboo_raft.name
-item.grc.bamboo_coal.name=item.grc.bamboo_coal.name
-item.grc.bamboo_shoot_food.name=item.grc.bamboo_shoot_food.name
+item.bamboo.name=item.bamboo.name
+item.bamboo_door_item.name=item.bamboo_door_item.name
+item.bamboo_slab.name=item.bamboo_slab.name
+item.bamboo_raft.name=item.bamboo_raft.name
+item.bamboo_coal.name=item.bamboo_coal.name
+item.bamboo_shoot_food.name=item.bamboo_shoot_food.name
 
 # Entities
 entity.Growthcraft|Bamboo.bamboo_raft.name=entity.Growthcraft|Bamboo.bamboo_raft.name

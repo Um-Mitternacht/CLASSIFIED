@@ -54,7 +54,7 @@ public class ItemCheese extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getCheeseType(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getCheeseType(stack).getBasename();
 	}
 
 	@Override

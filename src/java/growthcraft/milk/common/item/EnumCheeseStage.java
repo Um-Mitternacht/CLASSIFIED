@@ -45,6 +45,11 @@ public enum EnumCheeseStage
 		this.index = ordinal();
 	}
 
+	public String getName()
+	{
+		return name;
+	}
+
 	public NBTTagCompound writeToNBT(NBTTagCompound tag)
 	{
 		tag.setInteger("cheese_stage_id", index);

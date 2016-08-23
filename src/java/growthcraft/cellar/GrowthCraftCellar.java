@@ -147,21 +147,18 @@ public class GrowthCraftCellar
 	{
 		config.setLogger(logger);
 		config.load(event.getModConfigurationDirectory(), "growthcraft/cellar.conf");
-
 		if (config.debugEnabled)
 		{
 			logger.debug("Pre-Initializing %s", MOD_ID);
 			CellarRegistry.instance().setLogger(logger);
+			modules.setLogger(logger);
 		}
-
 		modules.add(blocks);
-
 		if (config.enableWailaIntegration) modules.add(new growthcraft.cellar.integration.Waila());
 		if (config.enableThaumcraftIntegration) modules.add(new growthcraft.cellar.integration.ThaumcraftModule());
 		// ALWAYS set the user modules as last, this ensures that other modules are given a chance to setup defaults and such.
 		modules.add(userApis);
 		modules.add(CommonProxy.instance);
-		if (config.debugEnabled) modules.setLogger(logger);
 		modules.freeze();
 
 		userApis.getUserBrewingRecipes()

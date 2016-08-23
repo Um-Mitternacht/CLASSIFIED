@@ -30,6 +30,7 @@ import growthcraft.api.core.log.GrcLogger;
 import growthcraft.api.core.log.ILogger;
 import growthcraft.api.core.util.DomainResourceLocationFactory;
 import growthcraft.core.common.definition.BlockTypeDefinition;
+import growthcraft.core.common.definition.ItemTypeDefinition;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.statemap.StateMapperBase;
@@ -88,6 +89,39 @@ public class GrcModelRegistry
 	public void registerAll(List<BlockTypeDefinition<? extends Block>> defs, int meta, @Nonnull DomainResourceLocationFactory drl)
 	{
 		for (BlockTypeDefinition<? extends Block> def : defs)
+		{
+			register(def, meta, drl);
+		}
+	}
+
+	public void register(@Nonnull ItemTypeDefinition<? extends Item> def, int meta, @Nonnull ModelResourceLocation location)
+	{
+		final Item item = def.getItem();
+		if (item != null)
+		{
+			registerItem(item, meta, location);
+		}
+		else
+		{
+			logger.error("ItemTypeDefinition `%s` returned an invalid Item! location='%s'", def, location);
+		}
+	}
+
+	public void register(@Nonnull ItemTypeDefinition<? extends Item> def, int meta, @Nonnull DomainResourceLocationFactory drl)
+	{
+		if (def != null)
+		{
+			register(def, meta, drl.createModel(def.registeredName, "inventory"));
+		}
+		else
+		{
+			logger.error("null ItemTypeDefinition defintion passed in for registering! location='%s'", drl);
+		}
+	}
+
+	public void registerAllItems(List<ItemTypeDefinition<? extends Item>> defs, int meta, @Nonnull DomainResourceLocationFactory drl)
+	{
+		for (ItemTypeDefinition<? extends Item> def : defs)
 		{
 			register(def, meta, drl);
 		}

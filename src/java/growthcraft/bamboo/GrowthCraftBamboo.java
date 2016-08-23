@@ -99,10 +99,10 @@ public class GrowthCraftBamboo
 	{
 		config.setLogger(logger);
 		config.load(event.getModConfigurationDirectory(), "growthcraft/bamboo.conf");
+		if (config.debugEnabled) modules.setLogger(logger);
 		modules.add(blocks);
 		modules.add(items);
 		if (config.enableThaumcraftIntegration) modules.add(new growthcraft.bamboo.integration.ThaumcraftModule());
-		if (config.debugEnabled) modules.setLogger(logger);
 		modules.add(CommonProxy.instance);
 		modules.freeze();
 		creativeTab = new CreativeTabsGrowthcraftBamboo("creative_tab_grcbamboo");

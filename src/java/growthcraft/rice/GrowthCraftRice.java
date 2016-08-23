@@ -23,25 +23,20 @@
  */
 package growthcraft.rice;
 
+//import growthcraft.cellar.GrowthCraftCellar;
 import growthcraft.api.core.log.GrcLogger;
 import growthcraft.api.core.log.ILogger;
 import growthcraft.api.core.module.ModuleContainer;
 import growthcraft.api.core.util.DomainResourceLocationFactory;
-//import growthcraft.cellar.GrowthCraftCellar;
-import growthcraft.core.common.definition.BlockDefinition;
-import growthcraft.core.common.definition.BlockTypeDefinition;
-import growthcraft.core.common.definition.ItemDefinition;
 import growthcraft.core.eventhandler.PlayerInteractEventPaddy;
 import growthcraft.core.GrowthCraftCore;
 import growthcraft.core.util.MapGenHelper;
-import growthcraft.rice.common.block.BlockPaddy;
-import growthcraft.rice.common.block.BlockRice;
 import growthcraft.rice.common.CommonProxy;
-import growthcraft.rice.common.item.ItemRice;
-import growthcraft.rice.common.item.ItemRiceBall;
 import growthcraft.rice.common.village.ComponentVillageRiceField;
 import growthcraft.rice.common.village.VillageHandlerRice;
+import growthcraft.rice.init.GrcRiceBlocks;
 import growthcraft.rice.init.GrcRiceFluids;
+import growthcraft.rice.init.GrcRiceItems;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -53,7 +48,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.VillagerRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
 @Mod(
@@ -72,11 +66,8 @@ public class GrowthCraftRice
 	@Instance(MOD_ID)
 	public static GrowthCraftRice instance;
 	public static DomainResourceLocationFactory resources = new DomainResourceLocationFactory("grcrice");
-	public static BlockTypeDefinition<BlockRice> riceBlock;
-	public static BlockDefinition paddyField;
-	public static ItemDefinition rice;
-	public static ItemDefinition riceBall;
-
+	public static final GrcRiceBlocks blocks = new GrcRiceBlocks();
+	public static final GrcRiceItems items = new GrcRiceItems();
 	public static final GrcRiceFluids fluids = new GrcRiceFluids();
 
 	private final ILogger logger = new GrcLogger(MOD_ID);
@@ -94,74 +85,45 @@ public class GrowthCraftRice
 	}
 
 	@EventHandler
-	public void preload(FMLPreInitializationEvent event)
+	public void preInit(FMLPreInitializationEvent event)
 	{
 		config.setLogger(logger);
 		config.load(event.getModConfigurationDirectory(), "growthcraft/rice.conf");
-
+		if (config.debugEnabled) modules.setLogger(logger);
+		modules.add(blocks);
+		modules.add(items);
 		modules.add(fluids);
 		if (config.enableThaumcraftIntegration) modules.add(new growthcraft.rice.integration.ThaumcraftModule());
 		modules.add(CommonProxy.instance);
-		if (config.debugEnabled) modules.setLogger(logger);
-
-		//====================
-		// INIT
-		//====================
-		riceBlock = new BlockTypeDefinition<BlockRice>(new BlockRice());
-		paddyField = new BlockDefinition(new BlockPaddy());
-
-		rice     = new ItemDefinition(new ItemRice());
-		riceBall = new ItemDefinition(new ItemRiceBall());
-
+		modules.freeze();
 		modules.preInit();
 		register();
 	}
 
 	private void register()
 	{
-		//====================
-		// REGISTRIES
-		//====================
-		GameRegistry.registerBlock(riceBlock.getBlock(), "rice_block");
-		GameRegistry.registerBlock(paddyField.getBlock(), "paddy_field");
-
-		GameRegistry.registerItem(rice.getItem(), "rice");
-		GameRegistry.registerItem(riceBall.getItem(), "rice_ball");
-
-		MinecraftForge.addGrassSeed(rice.asStack(), config.riceSeedDropRarity);
-
+		modules.register();
+		MinecraftForge.addGrassSeed(items.rice.asStack(), config.riceSeedDropRarity);
 		MapGenHelper.registerStructureComponent(ComponentVillageRiceField.class, "grc.rice_field");
-
-		//====================
-		// ORE DICTIONARY
-		//====================
-		OreDictionary.registerOre("cropRice", rice.getItem());
-		OreDictionary.registerOre("seedRice", rice.getItem());
-		// For Pam's HarvestCraft
-		// Uses the same OreDict. names as HarvestCraft
-		OreDictionary.registerOre("listAllseed", rice.getItem());
 
 		//====================
 		// CRAFTING
 		//====================
-		GameRegistry.addRecipe(new ShapedOreRecipe(riceBall.asStack(1), "###", "###", '#', "cropRice"));
-
-		modules.register();
+		GameRegistry.addRecipe(new ShapedOreRecipe(items.riceBall.asStack(1), "###", "###", '#', "cropRice"));
 	}
 
 	@EventHandler
-	public void load(FMLInitializationEvent event)
+	public void init(FMLInitializationEvent event)
 	{
-		PlayerInteractEventPaddy.paddyBlocks.put(Blocks.farmland, paddyField.getBlock());
+		PlayerInteractEventPaddy.paddyBlocks.put(Blocks.farmland, blocks.paddyField.getBlock());
 		final VillageHandlerRice handler = new VillageHandlerRice();
 		//VillagerRegistry.instance().registerVillageTradeHandler(GrowthCraftCellar.getConfig().villagerBrewerID, handler);
 		VillagerRegistry.instance().registerVillageCreationHandler(handler);
-
 		modules.init();
 	}
 
 	@EventHandler
-	public void postload(FMLPostInitializationEvent event)
+	public void postInit(FMLPostInitializationEvent event)
 	{
 		modules.postInit();
 	}

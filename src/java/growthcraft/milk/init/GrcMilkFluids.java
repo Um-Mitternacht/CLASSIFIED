@@ -89,7 +89,7 @@ public class GrcMilkFluids extends GrcModuleBase
 	{
 		for (EnumCheeseType cheese : EnumCheeseType.VALUES)
 		{
-			final String fluidName = "grc.cheese_" + cheese.name;
+			final String fluidName = "grc.cheese_" + cheese.getBasename();
 			final Fluid fluid = new GrcFluid(fluidName,
 				GrowthCraftMilk.resources.create("fluids/milk_still"),
 				GrowthCraftMilk.resources.create("fluids/milk_flow")
@@ -336,7 +336,7 @@ public class GrcMilkFluids extends GrcModuleBase
 
 		for (Map.Entry<EnumCheeseType, FluidFactory.FluidDetails> pair : cheeses.entrySet())
 		{
-			pair.getValue().registerObjects("grc", "cheese_" + pair.getKey().name);
+			pair.getValue().registerObjects("grc", "cheese_" + pair.getKey().getBasename());
 		}
 
 		BoozeRegistryHelper.registerBooze(kumisFluids, kumisFluidBlocks, kumisFluidBuckets, kumisBottle);

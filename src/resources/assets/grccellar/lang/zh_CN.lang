@@ -2,41 +2,41 @@
 itemGroup.creative_tab_grccellar=Growthcraft|地窖
 
 # Blocks
-tile.grc.fruit_press.name=榨汁机
-tile.grc.fruit_presser.name=榨汁机
-tile.grc.brew_kettle.name=酿造锅
-tile.grc.ferment_barrel.name=发酵桶
-tile.grc.ferment_jar.name=发酵罐
+tile.fruit_press.name=榨汁机
+tile.fruit_presser.name=榨汁机
+tile.brew_kettle.name=酿造锅
+tile.ferment_barrel.name=发酵桶
+tile.ferment_jar.name=发酵罐
 
 # Items
 # Please remove this field once all other module translations have been updated,
 # this is no longer used
-item.grc.boozeBucket.name=一桶
+item.boozeBucket.name=一桶
 
-item.grc.yeast0.name=酿酒酵母
-item.grc.yeast1.name=窖藏啤酒酵母
-item.grc.yeast2.name=贝酵母
-item.grc.yeast3.name=乙醇酵母
-item.grc.yeast4.name=原酵母
+item.yeast0.name=酿酒酵母
+item.yeast1.name=窖藏啤酒酵母
+item.yeast2.name=贝酵母
+item.yeast3.name=乙醇酵母
+item.yeast4.name=原酵母
 
 # Water Bags
-item.grc.water_bag.white.name=水袋(白)
-item.grc.water_bag.orange.name=水袋(橙)
-item.grc.water_bag.magenta.name=水袋(品红)
-item.grc.water_bag.light_blue.name=水袋(浅蓝)
-item.grc.water_bag.yellow.name=水袋(黄)
-item.grc.water_bag.lime.name=水袋(黄绿)
-item.grc.water_bag.pink.name=水袋(粉)
-item.grc.water_bag.gray.name=水袋(灰)
-item.grc.water_bag.silver.name=水袋(淡灰)
-item.grc.water_bag.cyan.name=水袋(青)
-item.grc.water_bag.purple.name=水袋(紫)
-item.grc.water_bag.blue.name=水袋(蓝)
-item.grc.water_bag.brown.name=水袋(棕)
-item.grc.water_bag.green.name=水袋(绿)
-item.grc.water_bag.red.name=水袋(红)
-item.grc.water_bag.black.name=水袋(黑)
-item.grc.water_bag.name=水袋
+item.water_bag.white.name=水袋(白)
+item.water_bag.orange.name=水袋(橙)
+item.water_bag.magenta.name=水袋(品红)
+item.water_bag.light_blue.name=水袋(浅蓝)
+item.water_bag.yellow.name=水袋(黄)
+item.water_bag.lime.name=水袋(黄绿)
+item.water_bag.pink.name=水袋(粉)
+item.water_bag.gray.name=水袋(灰)
+item.water_bag.silver.name=水袋(淡灰)
+item.water_bag.cyan.name=水袋(青)
+item.water_bag.purple.name=水袋(紫)
+item.water_bag.blue.name=水袋(蓝)
+item.water_bag.brown.name=水袋(棕)
+item.water_bag.green.name=水袋(绿)
+item.water_bag.red.name=水袋(红)
+item.water_bag.black.name=水袋(黑)
+item.water_bag.name=水袋
 
 # Containers
 container.grc.fruit_press=榨汁机

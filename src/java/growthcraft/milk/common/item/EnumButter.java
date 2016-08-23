@@ -35,13 +35,23 @@ public enum EnumButter implements IItemStackFactory
 
 	public static final EnumButter[] VALUES = values();
 
-	public final String name;
-	public final int meta;
+	private final String name;
+	private final int meta;
 
 	private EnumButter(String n)
 	{
 		this.name = n;
 		this.meta = ordinal();
+	}
+
+	public int getMetadata()
+	{
+		return meta;
+	}
+
+	public String getBasename()
+	{
+		return name;
 	}
 
 	public ItemStack asStack(int size)

@@ -44,7 +44,7 @@ public class RiceBlockCheck
 	{
 		if (state != null)
 		{
-			return GrowthCraftRice.paddyField.equals(state.getBlock());
+			return GrowthCraftRice.blocks.paddyField.equals(state.getBlock());
 		}
 		return false;
 	}
