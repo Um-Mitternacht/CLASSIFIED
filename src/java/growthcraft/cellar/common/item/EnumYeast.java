@@ -30,13 +30,31 @@ import net.minecraft.item.ItemStack;
 
 public enum EnumYeast implements IItemStackFactory
 {
-	BREWERS,
-	LAGER,
-	BAYANUS,
-	ETHEREAL,
-	ORIGIN;
+	BREWERS(0, "brewers"),
+	LAGER(1, "lager"),
+	BAYANUS(2, "bayanus"),
+	ETHEREAL(3, "ethereal"),
+	ORIGIN(4, "origin");
 
 	public static final int length = values().length;
+	private int meta;
+	private String name;
+
+	private EnumYeast(int p_meta, String p_name)
+	{
+		this.meta = p_meta;
+		this.name = p_name;
+	}
+
+	public String getBasename()
+	{
+		return name;
+	}
+
+	public int getMetadata()
+	{
+		return ordinal();
+	}
 
 	/**
 	 * Convience method for creating the corresponding yeast stack
@@ -47,7 +65,7 @@ public enum EnumYeast implements IItemStackFactory
 	 */
 	public ItemStack asStack(int size)
 	{
-		return GrowthCraftCellar.items.yeast.asStack(size, ordinal());
+		return GrowthCraftCellar.items.yeast.asStack(size, meta);
 	}
 
 	/**

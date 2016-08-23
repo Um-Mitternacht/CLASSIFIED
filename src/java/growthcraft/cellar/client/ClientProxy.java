@@ -23,8 +23,10 @@
  */
 package growthcraft.cellar.client;
 
+import growthcraft.api.core.item.EnumDye;
 import growthcraft.cellar.client.resource.GrcCellarResources;
 import growthcraft.cellar.common.CommonProxy;
+import growthcraft.cellar.common.item.EnumYeast;
 import growthcraft.cellar.GrowthCraftCellar;
 import growthcraft.core.client.renderer.block.statemap.GrcDomainStateMapper;
 import growthcraft.core.client.util.GrcModelRegistry;
@@ -36,6 +38,17 @@ public class ClientProxy extends CommonProxy
 		final GrcModelRegistry gmr = GrcModelRegistry.instance();
 		gmr.registerAll(GrowthCraftCellar.blocks.all, 0, GrowthCraftCellar.resources);
 		gmr.setCustomStateMapperForAll(GrowthCraftCellar.blocks.all, new GrcDomainStateMapper(GrowthCraftCellar.resources));
+
+		for (EnumYeast yeast : EnumYeast.values())
+		{
+			gmr.register(GrowthCraftCellar.items.yeast, yeast.getMetadata(), GrowthCraftCellar.resources.createModel("yeast_" + yeast.getBasename(), "inventory"));
+		}
+		for (EnumDye dye : EnumDye.values())
+		{
+			gmr.register(GrowthCraftCellar.items.waterBag, dye.getDyeDamage(), GrowthCraftCellar.resources.createModel("water_bag_" + dye.getName(), "inventory"));
+		}
+		gmr.register(GrowthCraftCellar.items.waterBag, 16, GrowthCraftCellar.resources.createModel("water_bag_default", "inventory"));
+		gmr.register(GrowthCraftCellar.items.chievItemDummy, 0, GrowthCraftCellar.resources);
 	}
 
 	@Override

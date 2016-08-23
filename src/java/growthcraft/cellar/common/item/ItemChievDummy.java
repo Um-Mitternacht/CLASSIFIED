@@ -11,6 +11,6 @@ public class ItemChievDummy extends GrcItemBase
 		setMaxStackSize(1);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.chiev_item_dummy");
+		setUnlocalizedName("chiev_item_dummy");
 	}
 }

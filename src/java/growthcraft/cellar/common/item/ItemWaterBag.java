@@ -71,7 +71,7 @@ public class ItemWaterBag extends GrcItemBase implements IFluidContainerItem, IE
 		super();
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.water_bag");
+		setUnlocalizedName("water_bag");
 		setCreativeTab(GrowthCraftCellar.tab);
 		this.maxStackSize = 1;
 		this.capacity = GrowthCraftCellar.getConfig().waterBagCapacity;

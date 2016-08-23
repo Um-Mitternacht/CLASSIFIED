@@ -41,7 +41,7 @@ public class ItemYeast extends GrcItemBase
 		super();
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.yeast");
+		setUnlocalizedName("yeast");
 		setCreativeTab(GrowthCraftCellar.tab);
 	}
 
