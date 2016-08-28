@@ -42,7 +42,7 @@ public class ItemCheese extends GrcItemFoodBase
 		super(2, 0.3F, false);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.cheese");
+		setUnlocalizedName("cheese");
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 	}
 
@@ -54,7 +54,7 @@ public class ItemCheese extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getCheeseType(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getCheeseType(stack).getBasename();
 	}
 
 	@Override

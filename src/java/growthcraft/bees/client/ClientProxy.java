@@ -24,6 +24,7 @@
 package growthcraft.bees.client;
 
 import growthcraft.bees.common.CommonProxy;
+import growthcraft.bees.common.item.EnumBeesWax;
 import growthcraft.bees.GrowthCraftBees;
 import growthcraft.core.client.renderer.block.statemap.GrcDomainStateMapper;
 import growthcraft.core.client.util.GrcModelRegistry;
@@ -35,6 +36,14 @@ public class ClientProxy extends CommonProxy
 		final GrcModelRegistry gmr = GrcModelRegistry.instance();
 		gmr.registerAll(GrowthCraftBees.blocks.all, 0, GrowthCraftBees.resources);
 		gmr.setCustomStateMapperForAll(GrowthCraftBees.blocks.all, new GrcDomainStateMapper(GrowthCraftBees.resources));
+		gmr.register(GrowthCraftBees.items.bee, 0, GrowthCraftBees.resources);
+		gmr.register(GrowthCraftBees.items.honeyCombEmpty, 0, GrowthCraftBees.resources);
+		gmr.register(GrowthCraftBees.items.honeyCombFilled, 0, GrowthCraftBees.resources);
+		gmr.register(GrowthCraftBees.items.honeyJar, 0, GrowthCraftBees.resources);
+		for (EnumBeesWax wax : EnumBeesWax.VALUES)
+		{
+			gmr.register(GrowthCraftBees.items.beesWax, wax.getMetadata(), GrowthCraftBees.resources.createModel("beeswax_" + wax.getBasename(), "inventory"));
+		}
 	}
 
 	@Override

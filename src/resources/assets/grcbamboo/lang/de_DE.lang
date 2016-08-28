@@ -1,26 +1,26 @@
 # Creative Tabs
 itemGroup.creative_tab_grcbamboo=itemGroup.creative_tab_grcbamboo
 # Blocks
-tile.grc.bamboo_block.name=Bambus
-tile.grc.bamboo_door.name=Bambustür
-tile.grc.bamboo_fence.name=Bambuszaun
-tile.grc.bamboo_fence_gate.name=Bambuszaun Tor
-tile.grc.bamboo_fence_rope.name=tile.grc.bamboo_fence_rope.name
-tile.grc.bamboo_leaves.name=Bambusblätter
-tile.grc.bamboo_scaffold.name=Bambus-Gerüst
-tile.grc.bamboo_shoot.name=Bambusspross
-tile.grc.bamboo_slab.name=Bambusstufe
-tile.grc.bamboo_stairs.name=Bambustreppe
-tile.grc.bamboo_stalk.name=Bambus
-tile.grc.bamboo_wall.name=Bambuswand
+tile.bamboo_block.name=Bambus
+tile.bamboo_door.name=Bambustür
+tile.bamboo_fence.name=Bambuszaun
+tile.bamboo_fence_gate.name=Bambuszaun Tor
+tile.bamboo_fence_rope.name=tile.bamboo_fence_rope.name
+tile.bamboo_leaves.name=Bambusblätter
+tile.bamboo_scaffold.name=Bambus-Gerüst
+tile.bamboo_shoot.name=Bambusspross
+tile.bamboo_slab.name=Bambusstufe
+tile.bamboo_stairs.name=Bambustreppe
+tile.bamboo_stalk.name=Bambus
+tile.bamboo_wall.name=Bambuswand
 
 # Items
-item.grc.bamboo.name=Bambus
-item.grc.bamboo_door_item.name=Bambustür
-item.grc.bamboo_slab.name=Bambusstufe
-item.grc.bamboo_raft.name=Bambusfloß
-item.grc.bamboo_coal.name=Bambus-Kohle
-item.grc.bamboo_shoot_food.name=Bambusspross
+item.bamboo.name=Bambus
+item.bamboo_door_item.name=Bambustür
+item.bamboo_slab.name=Bambusstufe
+item.bamboo_raft.name=Bambusfloß
+item.bamboo_coal.name=Bambus-Kohle
+item.bamboo_shoot_food.name=Bambusspross
 
 # Entities
 entity.Growthcraft|Bamboo.bamboo_raft.name=Bambusfloß

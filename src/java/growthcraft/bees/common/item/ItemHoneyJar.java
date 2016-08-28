@@ -13,7 +13,7 @@ public class ItemHoneyJar extends GrcItemFoodBase
 	public ItemHoneyJar()
 	{
 		super(6, false);
-		setUnlocalizedName("grc.honey_jar");
+		setUnlocalizedName("honey_jar");
 		setCreativeTab(GrowthCraftBees.tab);
 		setContainerItem(Items.flower_pot);
 		setMaxStackSize(1);

@@ -1,5 +1,5 @@
 # Blocks
-tile.grc.fish_trap.name=Rede de Pesca
+tile.fish_trap.name=Rede de Pesca
 
 # Containers
 container.grc.fish_trap=Rede de Pesca

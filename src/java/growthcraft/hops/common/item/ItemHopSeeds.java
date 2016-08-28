@@ -21,7 +21,7 @@ public class ItemHopSeeds extends GrcItemBase implements IPlantable
 	public ItemHopSeeds()
 	{
 		super();
-		this.setUnlocalizedName("grc.hop_seeds");
+		this.setUnlocalizedName("hop_seeds");
 		this.setCreativeTab(GrowthCraftCore.creativeTab);
 	}
 

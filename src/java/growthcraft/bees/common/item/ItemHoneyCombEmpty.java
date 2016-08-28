@@ -8,7 +8,7 @@ public class ItemHoneyCombEmpty extends GrcItemBase
 	public ItemHoneyCombEmpty()
 	{
 		super();
-		setUnlocalizedName("grc.honey_comb.empty");
+		setUnlocalizedName("honey_comb.empty");
 		setCreativeTab(GrowthCraftBees.tab);
 	}
 }

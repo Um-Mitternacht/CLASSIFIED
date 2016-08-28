@@ -1,9 +1,10 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "grcfishes:fish_trap"
+    "model": "grcfishes:fish_trap",
+    "transform": "forge:default-block"
   },
   "variants": {
-    "normal": {}
+    "normal": [{}]
   }
 }

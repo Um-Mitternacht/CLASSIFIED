@@ -19,7 +19,7 @@ public class ItemAppleSeeds extends GrcPseudoItemBlock implements IPlantable
 	public ItemAppleSeeds()
 	{
 		super();
-		setUnlocalizedName("grc.apple_seeds");
+		setUnlocalizedName("apple_seeds");
 		setCreativeTab(GrowthCraftCore.creativeTab);
 	}
 

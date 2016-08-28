@@ -2,37 +2,37 @@
 itemGroup.creative_tab_grccore=Growthcraft
 
 # Blocks
-tile.grc.acacia_fence_rope.name=Cerca com Corda (Acácia)
-tile.grc.birch_fence_rope.name=Cerca com Corda (Eucalipto)
-tile.grc.dark_oak_fence_rope.name=Cerca com Corda (Carvalho Escuro)
-tile.grc.jungle_fence_rope.name=Cerca com Corda (Madeira da Selva)
-tile.grc.oak_fence_rope.name=Cerca com Corda (Carvalho)
-tile.grc.spruce_fence_rope.name=Cerca com Corda (Pinheiro)
-tile.grc.nether_brick_fence_rope.name=Cerca com Corda (Tijolos do Nether)
-tile.grc.rope_block.name=Corda
-tile.grc.salt_block.name=Bloco de Sal
+tile.acacia_fence_rope.name=Cerca com Corda (Acácia)
+tile.birch_fence_rope.name=Cerca com Corda (Eucalipto)
+tile.dark_oak_fence_rope.name=Cerca com Corda (Carvalho Escuro)
+tile.jungle_fence_rope.name=Cerca com Corda (Madeira da Selva)
+tile.oak_fence_rope.name=Cerca com Corda (Carvalho)
+tile.spruce_fence_rope.name=Cerca com Corda (Pinheiro)
+tile.nether_brick_fence_rope.name=Cerca com Corda (Tijolos do Nether)
+tile.rope_block.name=Corda
+tile.salt_block.name=Bloco de Sal
 
 # Items
-item.grc.rope.name=Corda
-item.grc.salt.name=Sal
-item.grc.bucket_salt.name=Balde de Sal
-item.grc.bottle_salt.name=Garrafa de Sal
-item.grc.crowbar.black.name=Pé-de-Cabra (Preto)
-item.grc.crowbar.red.name=Pé-de-Cabra (Vermelho)
-item.grc.crowbar.green.name=Pé-de-Cabra (Verde)
-item.grc.crowbar.brown.name=Pé-de-Cabra (Marrom)
-item.grc.crowbar.blue.name=Pé-de-Cabra (Azul)
-item.grc.crowbar.purple.name=Pé-de-Cabra (Roxo)
-item.grc.crowbar.cyan.name=Pé-de-Cabra (Ciano)
-item.grc.crowbar.light_gray.name=Pé-de-Cabra (Cinza Claro)
-item.grc.crowbar.gray.name=Pé-de-Cabra (Cinza)
-item.grc.crowbar.pink.name=Pé-de-Cabra (Rosa)
-item.grc.crowbar.lime.name=Pé-de-Cabra (Lima)
-item.grc.crowbar.yellow.name=Pé-de-Cabra (Amarelo)
-item.grc.crowbar.light_blue.name=Pé-de-Cabra (Azul Claro)
-item.grc.crowbar.magenta.name=Pé-de-Cabra (Magenta)
-item.grc.crowbar.orange.name=Pé-de-Cabra (Laranja)
-item.grc.crowbar.white.name=Pé-de-Cabra (Branco)
+item.rope.name=Corda
+item.salt.name=Sal
+item.bucket_salt.name=Balde de Sal
+item.bottle_salt.name=Garrafa de Sal
+item.crowbar.black.name=Pé-de-Cabra (Preto)
+item.crowbar.red.name=Pé-de-Cabra (Vermelho)
+item.crowbar.green.name=Pé-de-Cabra (Verde)
+item.crowbar.brown.name=Pé-de-Cabra (Marrom)
+item.crowbar.blue.name=Pé-de-Cabra (Azul)
+item.crowbar.purple.name=Pé-de-Cabra (Roxo)
+item.crowbar.cyan.name=Pé-de-Cabra (Ciano)
+item.crowbar.silver.name=Pé-de-Cabra (Cinza Claro)
+item.crowbar.gray.name=Pé-de-Cabra (Cinza)
+item.crowbar.pink.name=Pé-de-Cabra (Rosa)
+item.crowbar.lime.name=Pé-de-Cabra (Lima)
+item.crowbar.yellow.name=Pé-de-Cabra (Amarelo)
+item.crowbar.light_blue.name=Pé-de-Cabra (Azul Claro)
+item.crowbar.magenta.name=Pé-de-Cabra (Magenta)
+item.crowbar.orange.name=Pé-de-Cabra (Laranja)
+item.crowbar.white.name=Pé-de-Cabra (Branco)
 
 # Fluids
 fluid.tile.water=Água
@@ -40,8 +40,8 @@ fluid.tile.lava=Lava
 
 ## Salt Water
 fluid.grc.salt_water=Água Salgada
-tile.grccore.fluid_block_salt_water.name=Água Salgada
-item.grc.fluid_bottle_salt_water.name=Garrafa de Água Salgada
+tile.ore.fluid_block_salt_water.name=Água Salgada
+item.fluid_bottle_salt_water.name=Garrafa de Água Salgada
 item.bucket.fluid.grc.salt_water.name=Balde de Água Salgada
 
 # Other

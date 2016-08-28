@@ -3,59 +3,59 @@ itemGroup.creative_tab_grcbees=Growthcraft|蜜蜂
 
 # Blocks
 ## Vanilla Bee Boxes
-tile.grc.bee_box.minecraft.oak.name=橡木蜂箱
-tile.grc.bee_box.minecraft.spruce.name=云杉蜂箱
-tile.grc.bee_box.minecraft.birch.name=白桦蜂箱
-tile.grc.bee_box.minecraft.jungle.name=从林木蜂箱
-tile.grc.bee_box.minecraft.acacia.name=金合欢蜂箱
-tile.grc.bee_box.minecraft.darkoak.name=深色橡木蜂箱
+tile.bee_box.minecraft.oak.name=橡木蜂箱
+tile.bee_box.minecraft.spruce.name=云杉蜂箱
+tile.bee_box.minecraft.birch.name=白桦蜂箱
+tile.bee_box.minecraft.jungle.name=从林木蜂箱
+tile.bee_box.minecraft.acacia.name=金合欢蜂箱
+tile.bee_box.minecraft.darkoak.name=深色橡木蜂箱
 
 ## Growthcraft|Nether Bee Boxes
-tile.grc.bee_box.nether.0.name=恶毒蜂箱
+tile.bee_box.nether.0.name=恶毒蜂箱
 
 ## Growthcraft|Bamboo Bee Boxes
-tile.grc.bee_box.bamboo.0.name=竹蜂箱
+tile.bee_box.bamboo.0.name=竹蜂箱
 
 ## Thaumcraft Bee Boxes
-tile.grc.bee_box.thaumcraft.greatwood.name=宏伟之木蜂箱
-tile.grc.bee_box.thaumcraft.silverwood.name=银木蜂箱
+tile.bee_box.thaumcraft.greatwood.name=宏伟之木蜂箱
+tile.bee_box.thaumcraft.silverwood.name=银木蜂箱
 
 ## BiomesOPlenty
-tile.grc.bee_box.biomes_o_plenty.sacred_oak.name=神圣橡木蜂箱
-tile.grc.bee_box.biomes_o_plenty.cherry.name=樱花树蜂箱
-tile.grc.bee_box.biomes_o_plenty.dark.name=黑暗树蜂箱
-tile.grc.bee_box.biomes_o_plenty.fir.name=杉树蜂箱
-tile.grc.bee_box.biomes_o_plenty.ethereal.name=天域树蜂箱
-tile.grc.bee_box.biomes_o_plenty.magic.name=魔法树蜂箱
-tile.grc.bee_box.biomes_o_plenty.mangrove.name=红树蜂箱
-tile.grc.bee_box.biomes_o_plenty.palm.name=棕榈树蜂箱
-tile.grc.bee_box.biomes_o_plenty.redwood.name=红木蜂箱
-tile.grc.bee_box.biomes_o_plenty.willow.name=柳木蜂箱
-tile.grc.bee_box.biomes_o_plenty.bamboo_thatching.name=竹板蜂箱
-tile.grc.bee_box.biomes_o_plenty.pine.name=松木蜂箱
-tile.grc.bee_box.biomes_o_plenty.hell_bark.name=地狱皮树蜂箱
-tile.grc.bee_box.biomes_o_plenty.jacaranda.name=蓝花楹树蜂箱
-tile.grc.bee_box.biomes_o_plenty.mahogany.name=桃花心木蜂箱
+tile.bee_box.biomes_o_plenty.sacred_oak.name=神圣橡木蜂箱
+tile.bee_box.biomes_o_plenty.cherry.name=樱花树蜂箱
+tile.bee_box.biomes_o_plenty.dark.name=黑暗树蜂箱
+tile.bee_box.biomes_o_plenty.fir.name=杉树蜂箱
+tile.bee_box.biomes_o_plenty.ethereal.name=天域树蜂箱
+tile.bee_box.biomes_o_plenty.magic.name=魔法树蜂箱
+tile.bee_box.biomes_o_plenty.mangrove.name=红树蜂箱
+tile.bee_box.biomes_o_plenty.palm.name=棕榈树蜂箱
+tile.bee_box.biomes_o_plenty.redwood.name=红木蜂箱
+tile.bee_box.biomes_o_plenty.willow.name=柳木蜂箱
+tile.bee_box.biomes_o_plenty.bamboo_thatching.name=竹板蜂箱
+tile.bee_box.biomes_o_plenty.pine.name=松木蜂箱
+tile.bee_box.biomes_o_plenty.hell_bark.name=地狱皮树蜂箱
+tile.bee_box.biomes_o_plenty.jacaranda.name=蓝花楹树蜂箱
+tile.bee_box.biomes_o_plenty.mahogany.name=桃花心木蜂箱
 
 ## Botania
-tile.grc.bee_box.botania.living_wood.name=活木蜂箱
-tile.grc.bee_box.botania.dream_wood.name=梦之木蜂箱
-tile.grc.bee_box.botania.shimmer_wood.name=微光木蜂箱
-tile.grc.bee_box.botania.shimmer_wood.desc=tile.grc.bee_box.botania.shimmer_wood.desc
+tile.bee_box.botania.living_wood.name=活木蜂箱
+tile.bee_box.botania.dream_wood.name=梦之木蜂箱
+tile.bee_box.botania.shimmer_wood.name=微光木蜂箱
+tile.bee_box.botania.shimmer_wood.desc=tile.bee_box.botania.shimmer_wood.desc
 
 # Other Blocks
-tile.grc.bee_hive.name=蜂巢
+tile.bee_hive.name=蜂巢
 
 # Items
-item.grc.honey_comb.empty.name=蜂窝
-item.grc.honey_comb.filled.name=蜂窝
-item.grc.honey_jar.name=蜂蜜
-item.grc.bee.name=蜜蜂
-item.grc.fluid_bottle_honey.name=蜂蜜瓶
-item.grc.fluid_bucket_honey.name=蜂蜜桶
-item.grc.bees_wax.normal.name=蜜蜡
-item.grc.bees_wax.red.name=红蜜蜡
-item.grc.bees_wax.black.name=黑蜜蜡
+item.honey_comb.empty.name=蜂窝
+item.honey_comb.filled.name=蜂窝
+item.honey_jar.name=蜂蜜
+item.bee.name=蜜蜂
+item.fluid_bottle_honey.name=蜂蜜瓶
+item.fluid_bucket_honey.name=蜂蜜桶
+item.bees_wax.normal.name=蜜蜡
+item.bees_wax.red.name=红蜜蜡
+item.bees_wax.black.name=黑蜜蜡
 
 # Containers
 container.grc.beeBox=蜂箱
@@ -71,7 +71,7 @@ fluid.grc.honey_mead_intoxicated=蜜酒
 fluid.grc.honey_mead_poisoned=蜜酒
 
 # Fluid Bottles
-item.grc.BottleFluidHoney.name=蜂蜜
+item.BottleFluidHoney.name=蜂蜜
 
 # Fluid Buckets
 item.bucket.fluid.grc.honey.name=蜂蜜桶
@@ -84,7 +84,7 @@ item.bucket.fluid.grc.honey_mead_intoxicated.name=蜜酒桶
 item.bucket.fluid.grc.honey_mead_poisoned.name=蜜酒桶
 
 # Fluid Blocks
-tile.grc.fluid_block_honey.name=蜂蜜
+tile.fluid_block_honey.name=蜂蜜
 tile.fluid.grc.honey_mead_young.name=蜜酒
 tile.fluid.grc.honey_mead_fermented.name=蜜酒
 tile.fluid.grc.honey_mead_potent.name=蜜酒

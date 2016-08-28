@@ -51,10 +51,10 @@ public class GrcCoreRecipes extends GrcModuleBase
 			Items.bucket,
 			saltStack, saltStack, saltStack, saltStack, saltStack, saltStack);
 
-		for (EnumDye dye : EnumDye.VALUES)
+		for (EnumDye dye : EnumDye.values())
 		{
 			GameRegistry.addRecipe(new ShapedOreRecipe(
-				GrowthCraftCore.items.crowbar.asStack(1, dye.meta),
+				GrowthCraftCore.items.crowbar.asStack(1, dye.getDyeDamage()),
 				new Object[] {
 					" II",
 					"DI ",

@@ -23,8 +23,26 @@
  */
 package growthcraft.rice.client;
 
+import growthcraft.core.client.renderer.block.statemap.GrcDomainStateMapper;
+import growthcraft.core.client.util.GrcModelRegistry;
 import growthcraft.rice.common.CommonProxy;
+import growthcraft.rice.GrowthCraftRice;
 
 public class ClientProxy extends CommonProxy
 {
+	private void registerBlockStates()
+	{
+		final GrcModelRegistry gmr = GrcModelRegistry.instance();
+		gmr.registerAll(GrowthCraftRice.blocks.all, 0, GrowthCraftRice.resources);
+		gmr.setCustomStateMapperForAll(GrowthCraftRice.blocks.all, new GrcDomainStateMapper(GrowthCraftRice.resources));
+		gmr.register(GrowthCraftRice.items.rice, 0, GrowthCraftRice.resources);
+		gmr.register(GrowthCraftRice.items.riceBall, 0, GrowthCraftRice.resources);
+	}
+
+	@Override
+	public void register()
+	{
+		super.register();
+		registerBlockStates();
+	}
 }

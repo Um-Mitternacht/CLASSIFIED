@@ -31,7 +31,7 @@ public class ItemStomach extends GrcItemBase
 	public ItemStomach()
 	{
 		super();
-		setUnlocalizedName("grc.stomach");
+		setUnlocalizedName("stomach");
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 	}
 }

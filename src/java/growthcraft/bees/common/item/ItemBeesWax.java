@@ -39,7 +39,7 @@ public class ItemBeesWax extends GrcItemBase
 	public ItemBeesWax()
 	{
 		super();
-		setUnlocalizedName("grcbees.bees_wax");
+		setUnlocalizedName("bees_wax");
 		setCreativeTab(GrowthCraftBees.tab);
 		setHasSubtypes(true);
 		setMaxDamage(0);
@@ -56,7 +56,7 @@ public class ItemBeesWax extends GrcItemBase
 		final EnumBeesWax beesWax = getEnumBeesWax(stack);
 		if (beesWax != null)
 		{
-			return super.getUnlocalizedName(stack) + "." + beesWax.basename;
+			return super.getUnlocalizedName(stack) + "." + beesWax.getBasename();
 		}
 		return super.getUnlocalizedName(stack);
 	}

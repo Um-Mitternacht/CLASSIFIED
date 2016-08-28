@@ -33,6 +33,8 @@ import net.minecraft.item.ItemStack;
 
 public class ItemTypeDefinition<T extends Item> extends ObjectDefinition<T> implements ISubItemStackFactory
 {
+	public String registeredName;
+
 	public ItemTypeDefinition(@Nonnull T item)
 	{
 		super(item);
@@ -63,5 +65,6 @@ public class ItemTypeDefinition<T extends Item> extends ObjectDefinition<T> impl
 	public void register(String name)
 	{
 		GameRegistry.registerItem(getItem(), name);
+		this.registeredName = name;
 	}
 }

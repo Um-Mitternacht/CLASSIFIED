@@ -1,26 +1,26 @@
 # Creative Tabs
 itemGroup.creative_tab_grcbamboo=itemGroup.creative_tab_grcbamboo
 # Blocks
-tile.grc.bamboo_block.name=Bambou
-tile.grc.bamboo_door.name=Porte en bambou
-tile.grc.bamboo_fence.name=Barrière en bambou
-tile.grc.bamboo_fence_gate.name=Portail en bambou
-tile.grc.bamboo_fence_rope.name=tile.grc.bamboo_fence_rope.name
-tile.grc.bamboo_leaves.name=Feuilles de bambou
-tile.grc.bamboo_scaffold.name=Échafaudage en bambou
-tile.grc.bamboo_shoot.name=Pousse de bambou
-tile.grc.bamboo_slab.name=Dalle en bambou
-tile.grc.bamboo_stairs.name=Escaliers en bambou
-tile.grc.bamboo_stalk.name=Bambou
-tile.grc.bamboo_wall.name=Mur de bambou
+tile.bamboo_block.name=Bambou
+tile.bamboo_door.name=Porte en bambou
+tile.bamboo_fence.name=Barrière en bambou
+tile.bamboo_fence_gate.name=Portail en bambou
+tile.bamboo_fence_rope.name=tile.bamboo_fence_rope.name
+tile.bamboo_leaves.name=Feuilles de bambou
+tile.bamboo_scaffold.name=Échafaudage en bambou
+tile.bamboo_shoot.name=Pousse de bambou
+tile.bamboo_slab.name=Dalle en bambou
+tile.bamboo_stairs.name=Escaliers en bambou
+tile.bamboo_stalk.name=Bambou
+tile.bamboo_wall.name=Mur de bambou
 
 # Items
-item.grc.bamboo.name=Bambou
-item.grc.bamboo_door_item.name=Porte en bambou
-item.grc.bamboo_slab.name=Dalle en bambou
-item.grc.bamboo_raft.name=Radeau de bambou
-item.grc.bamboo_coal.name=Charbon de bambou
-item.grc.bamboo_shoot_food.name=Pousse de bambou
+item.bamboo.name=Bambou
+item.bamboo_door_item.name=Porte en bambou
+item.bamboo_slab.name=Dalle en bambou
+item.bamboo_raft.name=Radeau de bambou
+item.bamboo_coal.name=Charbon de bambou
+item.bamboo_shoot_food.name=Pousse de bambou
 
 # Entities
 entity.Growthcraft|Bamboo.bamboo_raft.name=Radeau de bambou

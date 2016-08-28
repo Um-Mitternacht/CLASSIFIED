@@ -42,7 +42,7 @@ public class ItemYogurt extends GrcItemFoodBase
 		super(2, 0.3F, false);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.yogurt");
+		setUnlocalizedName("yogurt");
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 	}
 
@@ -54,7 +54,7 @@ public class ItemYogurt extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getEnumYogurt(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getEnumYogurt(stack).getBasename();
 	}
 
 	@Override

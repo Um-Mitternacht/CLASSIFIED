@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.apple_block.name=Apfel
-tile.grc.apple_sapling.name=Apfelbaum Setzling
-tile.grc.apple_leaves.name=Apfelbaum Blätter
+tile.apple_block.name=Apfel
+tile.apple_sapling.name=Apfelbaum Setzling
+tile.apple_leaves.name=Apfelbaum Blätter
 # Items
-item.grc.apple_seeds.name=Apfelkern
+item.apple_seeds.name=Apfelkern
 
 # Booze
 ## Fluids

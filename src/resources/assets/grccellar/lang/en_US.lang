@@ -2,41 +2,41 @@
 itemGroup.creative_tab_grccellar=Growthcraft Cellar
 
 # Blocks
-tile.grc.fruit_press.name=Mechanical Press
-tile.grc.fruit_presser.name=Mechanical Press
-tile.grc.brew_kettle.name=Brew Kettle
-tile.grc.ferment_barrel.name=Fermentation Barrel
-tile.grc.ferment_jar.name=Culture Jar
+tile.fruit_press.name=Mechanical Press
+tile.fruit_presser.name=Mechanical Press
+tile.brew_kettle.name=Brew Kettle
+tile.ferment_barrel.name=Fermentation Barrel
+tile.ferment_jar.name=Culture Jar
 
 # Items
 # Please remove this field once all other module translations have been updated,
 # this is no longer used
-item.grc.boozeBucket.name=Bucket
+item.boozeBucket.name=Bucket
 
-item.grc.yeast0.name=Brewers Yeast
-item.grc.yeast1.name=Lager Yeast
-item.grc.yeast2.name=Bayanus Yeast
-item.grc.yeast3.name=Ethereal Yeast
-item.grc.yeast4.name=Origin Yeast
+item.yeast0.name=Brewers Yeast
+item.yeast1.name=Lager Yeast
+item.yeast2.name=Bayanus Yeast
+item.yeast3.name=Ethereal Yeast
+item.yeast4.name=Origin Yeast
 
 # Water Bags
-item.grc.water_bag.white.name=Water Bag (White)
-item.grc.water_bag.orange.name=Water Bag (Orange)
-item.grc.water_bag.magenta.name=Water Bag (Magenta)
-item.grc.water_bag.light_blue.name=Water Bag (Light Blue)
-item.grc.water_bag.yellow.name=Water Bag (Yellow)
-item.grc.water_bag.lime.name=Water Bag (Lime)
-item.grc.water_bag.pink.name=Water Bag (Pink)
-item.grc.water_bag.gray.name=Water Bag (Gray)
-item.grc.water_bag.silver.name=Water Bag (Light Gray)
-item.grc.water_bag.cyan.name=Water Bag (Cyan)
-item.grc.water_bag.purple.name=Water Bag (Purple)
-item.grc.water_bag.blue.name=Water Bag (Blue)
-item.grc.water_bag.brown.name=Water Bag (Brown)
-item.grc.water_bag.green.name=Water Bag (Green)
-item.grc.water_bag.red.name=Water Bag (Red)
-item.grc.water_bag.black.name=Water Bag (Black)
-item.grc.water_bag.name=Water Bag
+item.water_bag.white.name=Water Bag (White)
+item.water_bag.orange.name=Water Bag (Orange)
+item.water_bag.magenta.name=Water Bag (Magenta)
+item.water_bag.light_blue.name=Water Bag (Light Blue)
+item.water_bag.yellow.name=Water Bag (Yellow)
+item.water_bag.lime.name=Water Bag (Lime)
+item.water_bag.pink.name=Water Bag (Pink)
+item.water_bag.gray.name=Water Bag (Gray)
+item.water_bag.silver.name=Water Bag (Light Gray)
+item.water_bag.cyan.name=Water Bag (Cyan)
+item.water_bag.purple.name=Water Bag (Purple)
+item.water_bag.blue.name=Water Bag (Blue)
+item.water_bag.brown.name=Water Bag (Brown)
+item.water_bag.green.name=Water Bag (Green)
+item.water_bag.red.name=Water Bag (Red)
+item.water_bag.black.name=Water Bag (Black)
+item.water_bag.name=Water Bag
 
 # Containers
 container.grc.fruit_press=Mechanical Press

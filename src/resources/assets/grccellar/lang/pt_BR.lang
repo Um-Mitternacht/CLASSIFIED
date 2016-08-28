@@ -2,41 +2,41 @@
 itemGroup.creative_tab_grccellar=Growthcraft Adega
 
 # Blocks
-tile.grc.fruit_press.name=Espremedor de Frutas
-tile.grc.fruit_presser.name=Espremedor de Frutas
-tile.grc.brew_kettle.name=Caldeira de Praparação
-tile.grc.ferment_barrel.name=Barril de Fermentação
-tile.grc.ferment_jar.name=Jarro de Cultura
+tile.fruit_press.name=Espremedor de Frutas
+tile.fruit_presser.name=Espremedor de Frutas
+tile.brew_kettle.name=Caldeira de Praparação
+tile.ferment_barrel.name=Barril de Fermentação
+tile.ferment_jar.name=Jarro de Cultura
 
 # Items
 # Please remove this field once all other module translations have been updated,
 # this is no longer used
-item.grc.boozeBucket.name=Balde
+item.boozeBucket.name=Balde
 
-item.grc.yeast0.name=Levedura do Cervejeiro
-item.grc.yeast1.name=Levedura de Chope
-item.grc.yeast2.name=Levedura de Bayanus
-item.grc.yeast3.name=Levedura Etérea
-item.grc.yeast4.name=Levedura Original
+item.yeast0.name=Levedura do Cervejeiro
+item.yeast1.name=Levedura de Chope
+item.yeast2.name=Levedura de Bayanus
+item.yeast3.name=Levedura Etérea
+item.yeast4.name=Levedura Original
 
 # Water Bags
-item.grc.water_bag.white.name=Cantil (Branco)
-item.grc.water_bag.orange.name=Cantil (Laranja)
-item.grc.water_bag.magenta.name=Cantil (Magenta)
-item.grc.water_bag.light_blue.name=Cantil (Azul Claro)
-item.grc.water_bag.yellow.name=Cantil (Amarelo)
-item.grc.water_bag.lime.name=Cantil (Lima)
-item.grc.water_bag.pink.name=Cantil (Rosa)
-item.grc.water_bag.gray.name=Cantil (Cinza)
-item.grc.water_bag.silver.name=Cantil (Cinza Claro)
-item.grc.water_bag.cyan.name=Cantil (Ciano)
-item.grc.water_bag.purple.name=Cantil (Roxo)
-item.grc.water_bag.blue.name=Cantil (Azul)
-item.grc.water_bag.brown.name=Cantil (Marrom)
-item.grc.water_bag.green.name=Cantil (Verde)
-item.grc.water_bag.red.name=Cantil (Vermelho)
-item.grc.water_bag.black.name=Cantil (Preto)
-item.grc.water_bag.name=Cantil
+item.water_bag.white.name=Cantil (Branco)
+item.water_bag.orange.name=Cantil (Laranja)
+item.water_bag.magenta.name=Cantil (Magenta)
+item.water_bag.light_blue.name=Cantil (Azul Claro)
+item.water_bag.yellow.name=Cantil (Amarelo)
+item.water_bag.lime.name=Cantil (Lima)
+item.water_bag.pink.name=Cantil (Rosa)
+item.water_bag.gray.name=Cantil (Cinza)
+item.water_bag.silver.name=Cantil (Cinza Claro)
+item.water_bag.cyan.name=Cantil (Ciano)
+item.water_bag.purple.name=Cantil (Roxo)
+item.water_bag.blue.name=Cantil (Azul)
+item.water_bag.brown.name=Cantil (Marrom)
+item.water_bag.green.name=Cantil (Verde)
+item.water_bag.red.name=Cantil (Vermelho)
+item.water_bag.black.name=Cantil (Preto)
+item.water_bag.name=Cantil
 
 # Containers
 container.grc.fruit_press=Espremedor de Frutas

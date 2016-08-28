@@ -64,28 +64,28 @@ public class GrcMilkItems extends GrcModuleItems
 		this.cheese = newDefinition(new ItemCheese());
 		this.cheeseCloth = newDefinition(new ItemCheeseCloth());
 		this.iceCream = newDefinition(new ItemIceCream());
+		this.starterCulture = newDefinition(new ItemStarterCulture());
+		this.stomach = newDefinition(new ItemStomach());
 		this.yogurt = newDefinition(new ItemYogurt());
 		if (GrowthCraftMilk.getConfig().thistleSeedEnabled)
 		{
 			this.seedThistle = newDefinition(new ItemSeedThistle());
 		}
-		this.stomach = newDefinition(new ItemStomach());
-		this.starterCulture = newDefinition(new ItemStarterCulture());
 	}
 
 	@Override
 	public void register()
 	{
-		butter.register("grc.butter");
-		cheese.register("grc.cheese");
-		cheeseCloth.register("grc.cheese_cloth");
-		iceCream.register("grc.ice_cream");
-		yogurt.register("grc.yogurt");
-		stomach.register("grc.stomach");
-		starterCulture.register("grc.starter_culture");
+		butter.register("butter");
+		cheese.register("cheese");
+		cheeseCloth.register("cheese_cloth");
+		iceCream.register("ice_cream");
+		starterCulture.register("starter_culture");
+		stomach.register("stomach");
+		yogurt.register("yogurt");
 		if (seedThistle != null)
 		{
-			seedThistle.register("grc.thistle_seed");
+			seedThistle.register("thistle_seed");
 		}
 	}
 

@@ -26,6 +26,10 @@ package growthcraft.milk.client;
 import growthcraft.core.client.renderer.block.statemap.GrcDomainStateMapper;
 import growthcraft.core.client.util.GrcModelRegistry;
 import growthcraft.milk.common.CommonProxy;
+import growthcraft.milk.common.item.EnumButter;
+import growthcraft.milk.common.item.EnumCheeseType;
+import growthcraft.milk.common.item.EnumIceCream;
+import growthcraft.milk.common.item.EnumYogurt;
 import growthcraft.milk.GrowthCraftMilk;
 
 public class ClientProxy extends CommonProxy
@@ -35,6 +39,29 @@ public class ClientProxy extends CommonProxy
 		final GrcModelRegistry gmr = GrcModelRegistry.instance();
 		gmr.registerAll(GrowthCraftMilk.blocks.all, 0, GrowthCraftMilk.resources);
 		gmr.setCustomStateMapperForAll(GrowthCraftMilk.blocks.all, new GrcDomainStateMapper(GrowthCraftMilk.resources));
+		for (EnumButter enumButter : EnumButter.VALUES)
+		{
+			gmr.register(GrowthCraftMilk.items.butter, enumButter.getMetadata(), GrowthCraftMilk.resources.createModel("butter_" + enumButter.getBasename(), "inventory"));
+		}
+		for (EnumCheeseType enumCheeseType : EnumCheeseType.VALUES)
+		{
+			gmr.register(GrowthCraftMilk.items.cheese, enumCheeseType.getMetadata(), GrowthCraftMilk.resources.createModel("cheese_" + enumCheeseType.getBasename(), "inventory"));
+		}
+		gmr.register(GrowthCraftMilk.items.cheeseCloth, 0, GrowthCraftMilk.resources);
+		for (EnumIceCream enumIceCream : EnumIceCream.VALUES)
+		{
+			gmr.register(GrowthCraftMilk.items.iceCream, enumIceCream.getMetadata(), GrowthCraftMilk.resources.createModel("ice_cream_" + enumIceCream.getBasename(), "inventory"));
+		}
+		if (GrowthCraftMilk.items.seedThistle != null)
+		{
+			gmr.register(GrowthCraftMilk.items.seedThistle, 0, GrowthCraftMilk.resources);
+		}
+		gmr.register(GrowthCraftMilk.items.starterCulture, 0, GrowthCraftMilk.resources);
+		gmr.register(GrowthCraftMilk.items.stomach, 0, GrowthCraftMilk.resources);
+		for (EnumYogurt enumYogurt : EnumYogurt.VALUES)
+		{
+			gmr.register(GrowthCraftMilk.items.yogurt, enumYogurt.getMetadata(), GrowthCraftMilk.resources.createModel("yogurt_" + enumYogurt.getBasename(), "inventory"));
+		}
 	}
 
 	@Override

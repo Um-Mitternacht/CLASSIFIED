@@ -40,6 +40,7 @@ import growthcraft.core.Utils;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyInteger;
+import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
@@ -64,6 +65,7 @@ import net.minecraftforge.fluids.IFluidHandler;
  */
 public abstract class GrcBlockContainer extends GrcBlockBase implements IDroppableBlock, IRotatableBlock, IWrenchable, ITileEntityProvider
 {
+	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	public static final PropertyInteger ROTATION = PropertyInteger.create("rotation", 0, 15);
 
 	protected Class<? extends TileEntity> tileEntityType;
@@ -293,7 +295,10 @@ public abstract class GrcBlockContainer extends GrcBlockBase implements IDroppab
 				for (int index = 0; index < inventory.getSizeInventory(); ++index)
 				{
 					final ItemStack stack = inventory.getStackInSlot(index);
-					spawnAsEntity(world, pos, stack);
+					if (stack != null)
+					{
+						spawnAsEntity(world, pos, stack);
+					}
 					inventory.setInventorySlotContents(index, null);
 				}
 				world.updateComparatorOutputLevel(pos, this);

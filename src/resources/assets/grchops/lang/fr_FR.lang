@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.hop_vine.name=Houblon commun
+tile.hop_vine.name=Houblon commun
 
 # Items
-item.grc.hops.name=Houblon commun
-item.grc.hop_seeds.name=Graine d'houbon commun
+item.hops.name=Houblon commun
+item.hop_seeds.name=Graine d'houbon commun
 
 # Fluids
 fluid.grc.hop_ale_young=Bière

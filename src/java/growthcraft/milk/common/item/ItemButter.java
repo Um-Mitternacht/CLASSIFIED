@@ -42,7 +42,7 @@ public class ItemButter extends GrcItemFoodBase
 		super(2, 0.3F, false);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.butter");
+		setUnlocalizedName("butter");
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 	}
 
@@ -54,7 +54,7 @@ public class ItemButter extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getEnumButter(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getEnumButter(stack).getBasename();
 	}
 
 	@Override

@@ -65,7 +65,7 @@ public class Cheese implements IStreamable
 
 	public int getId()
 	{
-		return cheese.meta;
+		return cheese.getMetadata();
 	}
 
 	public int getStageId()

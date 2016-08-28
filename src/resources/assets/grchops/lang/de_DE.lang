@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.hop_vine.name=Hopfen
+tile.hop_vine.name=Hopfen
 
 # Items
-item.grc.hops.name=Hopfen
-item.grc.hop_seeds.name=Hopfensamen
+item.hops.name=Hopfen
+item.hop_seeds.name=Hopfensamen
 
 # Fluids
 fluid.grc.hop_ale_young=Bier

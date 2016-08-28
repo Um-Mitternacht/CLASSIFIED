@@ -1,10 +1,10 @@
 # Blocks
-tile.grc.paddy_field.name=tile.grc.paddy_field.name
-tile.grc.rice_block.name=tile.grc.rice_block.name
+tile.paddy_field.name=tile.paddy_field.name
+tile.rice_block.name=tile.rice_block.name
 
 # Items
-item.grc.rice.name=item.grc.rice.name
-item.grc.rice_ball.name=item.grc.rice_ball.name
+item.rice.name=item.rice.name
+item.rice_ball.name=item.rice_ball.name
 
 # Fluids
 fluid.grc.rice_sake_young=fluid.grc.rice_sake_young

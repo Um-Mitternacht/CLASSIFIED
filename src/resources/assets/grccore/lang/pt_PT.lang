@@ -2,37 +2,37 @@
 itemGroup.creative_tab_grccore=Growthcraft
 
 # Blocks
-tile.grc.acacia_fence_rope.name=tile.grc.etfuturum_fence_rope_acacia.name
-tile.grc.birch_fence_rope.name=tile.grc.etfuturum_fence_rope_birch.name
-tile.grc.dark_oak_fence_rope.name=tile.grc.etfuturum_fence_rope_dark_oak.name
-tile.grc.jungle_fence_rope.name=tile.grc.etfuturum_fence_rope_jungle.name
-tile.grc.oak_fence_rope.name=Cerca com Corda
-tile.grc.spruce_fence_rope.name=tile.grc.etfuturum_fence_rope_spruce.name
-tile.grc.nether_brick_fence_rope.name=Cerca de Tijolo do Nether com Corda
-tile.grc.rope_block.name=Corda
-tile.grc.salt_block.name=tile.grc.salt_block.name
+tile.acacia_fence_rope.name=tile.etfuturum_fence_rope_acacia.name
+tile.birch_fence_rope.name=tile.etfuturum_fence_rope_birch.name
+tile.dark_oak_fence_rope.name=tile.etfuturum_fence_rope_dark_oak.name
+tile.jungle_fence_rope.name=tile.etfuturum_fence_rope_jungle.name
+tile.oak_fence_rope.name=Cerca com Corda
+tile.spruce_fence_rope.name=tile.etfuturum_fence_rope_spruce.name
+tile.nether_brick_fence_rope.name=Cerca de Tijolo do Nether com Corda
+tile.rope_block.name=Corda
+tile.salt_block.name=tile.salt_block.name
 
 # Items
-item.grc.rope.name=Corda
-item.grc.salt.name=Sal
-item.grc.bucket_salt.name=Balde de Sal
-item.grc.bottle_salt.name=Frasco de Sal
-item.grc.crowbar.black.name=item.grc.crowbar.black.name
-item.grc.crowbar.red.name=item.grc.crowbar.red.name
-item.grc.crowbar.green.name=item.grc.crowbar.green.name
-item.grc.crowbar.brown.name=item.grc.crowbar.brown.name
-item.grc.crowbar.blue.name=item.grc.crowbar.blue.name
-item.grc.crowbar.purple.name=item.grc.crowbar.purple.name
-item.grc.crowbar.cyan.name=item.grc.crowbar.cyan.name
-item.grc.crowbar.light_gray.name=item.grc.crowbar.light_gray.name
-item.grc.crowbar.gray.name=item.grc.crowbar.gray.name
-item.grc.crowbar.pink.name=item.grc.crowbar.pink.name
-item.grc.crowbar.lime.name=item.grc.crowbar.lime.name
-item.grc.crowbar.yellow.name=item.grc.crowbar.yellow.name
-item.grc.crowbar.light_blue.name=item.grc.crowbar.light_blue.name
-item.grc.crowbar.magenta.name=item.grc.crowbar.magenta.name
-item.grc.crowbar.orange.name=item.grc.crowbar.orange.name
-item.grc.crowbar.white.name=item.grc.crowbar.white.name
+item.rope.name=Corda
+item.salt.name=Sal
+item.bucket_salt.name=Balde de Sal
+item.bottle_salt.name=Frasco de Sal
+item.crowbar.black.name=item.crowbar.black.name
+item.crowbar.red.name=item.crowbar.red.name
+item.crowbar.green.name=item.crowbar.green.name
+item.crowbar.brown.name=item.crowbar.brown.name
+item.crowbar.blue.name=item.crowbar.blue.name
+item.crowbar.purple.name=item.crowbar.purple.name
+item.crowbar.cyan.name=item.crowbar.cyan.name
+item.crowbar.silver.name=item.crowbar.silver.name
+item.crowbar.gray.name=item.crowbar.gray.name
+item.crowbar.pink.name=item.crowbar.pink.name
+item.crowbar.lime.name=item.crowbar.lime.name
+item.crowbar.yellow.name=item.crowbar.yellow.name
+item.crowbar.light_blue.name=item.crowbar.light_blue.name
+item.crowbar.magenta.name=item.crowbar.magenta.name
+item.crowbar.orange.name=item.crowbar.orange.name
+item.crowbar.white.name=item.crowbar.white.name
 
 # Fluids
 fluid.tile.water=Água
@@ -40,8 +40,8 @@ fluid.tile.lava=Lava
 
 ## Salt Water
 fluid.grc.salt_water=Água Salgada
-tile.grccore.fluid_block_salt_water.name=Água Salgada
-item.grc.fluid_bottle_salt_water.name=Frasco de Água Salgada
+tile.ore.fluid_block_salt_water.name=Água Salgada
+item.fluid_bottle_salt_water.name=Frasco de Água Salgada
 item.bucket.fluid.grc.salt_water.name=Balde de Água Salgada
 
 # Other

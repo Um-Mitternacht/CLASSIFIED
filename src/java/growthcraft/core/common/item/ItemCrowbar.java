@@ -62,7 +62,7 @@ public class ItemCrowbar extends GrcItemBase implements IToolWrench
 		shiftRotations.add(BlockButton.class);
 		shiftRotations.add(BlockChest.class);
 		setHarvestLevel("wrench", 0);
-		setUnlocalizedName("grc.crowbar");
+		setUnlocalizedName("crowbar");
 		setCreativeTab(GrowthCraftCore.creativeTab);
 	}
 
@@ -122,13 +122,13 @@ public class ItemCrowbar extends GrcItemBase implements IToolWrench
 
 	public EnumDye getDye(ItemStack stack)
 	{
-		return EnumDye.getByMeta(stack.getItemDamage());
+		return EnumDye.byMetadata(stack.getItemDamage());
 	}
 
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getDye(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getDye(stack).getName();
 	}
 
 	@Override
@@ -136,9 +136,9 @@ public class ItemCrowbar extends GrcItemBase implements IToolWrench
 	@SuppressWarnings({"unchecked", "rawtypes"})
 	public void getSubItems(Item item, CreativeTabs tab, List list)
 	{
-		for (EnumDye dye : EnumDye.VALUES)
+		for (EnumDye dye : EnumDye.values())
 		{
-			list.add(new ItemStack(item, 1, dye.meta));
+			list.add(new ItemStack(item, 1, dye.getDyeDamage()));
 		}
 	}
 }

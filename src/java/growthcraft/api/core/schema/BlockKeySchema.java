@@ -25,9 +25,9 @@ package growthcraft.api.core.schema;
 
 import growthcraft.api.core.util.BlockKey;
 
-import net.minecraftforge.fml.common.registry.GameRegistry.UniqueIdentifier;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BlockKeySchema implements ICommentable, IValidatable
 {
@@ -46,9 +46,9 @@ public class BlockKeySchema implements ICommentable, IValidatable
 
 	public BlockKeySchema(Block block, int pmeta)
 	{
-		final UniqueIdentifier uuid = GameRegistry.findUniqueIdentifierFor(block);
-		this.mod_id = uuid.modId;
-		this.name = uuid.name;
+		final ResourceLocation resloc = new ResourceLocation(block.getRegistryName());
+		this.mod_id = resloc.getResourceDomain();
+		this.name = resloc.getResourcePath();
 		this.meta = pmeta;
 		this.comment = block.getLocalizedName();
 	}

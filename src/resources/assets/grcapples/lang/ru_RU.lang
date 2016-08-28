@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.apple_block.name=Яблоко
-tile.grc.apple_sapling.name=Саженец яблони
-tile.grc.apple_leaves.name=Листва яблони
+tile.apple_block.name=Яблоко
+tile.apple_sapling.name=Саженец яблони
+tile.apple_leaves.name=Листва яблони
 # Items
-item.grc.apple_seeds.name=Яблочный огрызок
+item.apple_seeds.name=Яблочный огрызок
 
 # Booze
 ## Fluids

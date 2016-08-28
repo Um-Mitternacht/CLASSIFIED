@@ -107,7 +107,6 @@ public class GrowthCraftMilk
 			modules.setLogger(logger);
 			MilkRegistry.instance().setLogger(logger);
 		}
-
 		modules.add(blocks);
 		modules.add(items);
 		modules.add(fluids);
@@ -118,9 +117,7 @@ public class GrowthCraftMilk
 		modules.add(CommonProxy.instance);
 		modules.freeze();
 		GrcMilkEffects.init();
-
 		userApis.setConfigDirectory(event.getModConfigurationDirectory());
-
 		GrowthCraftMilk.creativeTab = new GrcMilkCreativeTabs("creative_tab_grcmilk");
 
 		modules.preInit();

@@ -28,16 +28,14 @@ import growthcraft.api.core.log.GrcLogger;
 import growthcraft.api.core.log.ILogger;
 import growthcraft.api.core.module.ModuleContainer;
 import growthcraft.api.core.util.DomainResourceLocationFactory;
-import growthcraft.core.common.definition.ItemDefinition;
 import growthcraft.core.GrowthCraftCore;
 import growthcraft.core.util.MapGenHelper;
 import growthcraft.hops.common.CommonProxy;
-import growthcraft.hops.common.item.ItemHops;
-import growthcraft.hops.common.item.ItemHopSeeds;
 import growthcraft.hops.common.village.ComponentVillageHopVineyard;
 import growthcraft.hops.common.village.VillageHandlerHops;
 import growthcraft.hops.init.GrcHopsBlocks;
 import growthcraft.hops.init.GrcHopsFluids;
+import growthcraft.hops.init.GrcHopsItems;
 
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
@@ -49,7 +47,6 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.VillagerRegistry;
-import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(
 	modid = GrowthCraftHops.MOD_ID,
@@ -67,9 +64,8 @@ public class GrowthCraftHops
 	@Instance(MOD_ID)
 	public static GrowthCraftHops instance;
 	public static DomainResourceLocationFactory resources = new DomainResourceLocationFactory("grchops");
-	public static ItemDefinition hops;
-	public static ItemDefinition hopSeeds;
 	public static GrcHopsBlocks blocks = new GrcHopsBlocks();
+	public static GrcHopsItems items = new GrcHopsItems();
 	public static GrcHopsFluids fluids = new GrcHopsFluids();
 
 	private ILogger logger = new GrcLogger(MOD_ID);
@@ -91,53 +87,25 @@ public class GrowthCraftHops
 	{
 		config.setLogger(logger);
 		config.load(event.getModConfigurationDirectory(), "growthcraft/hops.conf");
-
+		if (config.debugEnabled) modules.setLogger(logger);
 		modules.add(blocks);
+		modules.add(items);
 		modules.add(fluids);
 		if (config.enableThaumcraftIntegration) modules.add(new growthcraft.hops.integration.ThaumcraftModule());
 		modules.add(CommonProxy.instance);
-		if (config.debugEnabled) modules.setLogger(logger);
 		modules.freeze();
-
-		hops     = new ItemDefinition(new ItemHops());
-		hopSeeds = new ItemDefinition(new ItemHopSeeds());
-
 		modules.preInit();
 		register();
 	}
 
 	private void register()
 	{
-		//====================
-		// REGISTRIES
-		//====================
-		GameRegistry.registerItem(hops.getItem(), "hops");
-		GameRegistry.registerItem(hopSeeds.getItem(), "hop_seeds");
-
-		CoreRegistry.instance().vineDrops().addDropEntry(hops.asStack(2), config.hopsVineDropRarity);
-
-		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(hops.asStack(), 1, 2, 10));
-		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(hops.asStack(), 1, 2, 10));
-
-		MapGenHelper.registerStructureComponent(ComponentVillageHopVineyard.class, "grc.hop_vineyard");
-
-		//====================
-		// ORE DICTIONARY
-		//====================
-		OreDictionary.registerOre("cropHops", hops.getItem());
-		OreDictionary.registerOre("materialHops", hops.getItem());
-		OreDictionary.registerOre("conesHops", hops.getItem());
-		OreDictionary.registerOre("seedHops", hopSeeds.getItem());
-		// For Pam's HarvestCraft
-		// Uses the same OreDict. names as HarvestCraft
-		OreDictionary.registerOre("listAllseed", hopSeeds.getItem());
-
-		//====================
-		// CRAFTING
-		//====================
-		GameRegistry.addShapelessRecipe(hopSeeds.asStack(), hops.getItem());
-
 		modules.register();
+		CoreRegistry.instance().vineDrops().addDropEntry(items.hops.asStack(2), config.hopsVineDropRarity);
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(items.hops.asStack(), 1, 2, 10));
+		ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(items.hops.asStack(), 1, 2, 10));
+		MapGenHelper.registerStructureComponent(ComponentVillageHopVineyard.class, "grc.hop_vineyard");
+		GameRegistry.addShapelessRecipe(items.hopSeeds.asStack(), items.hops.getItem());
 	}
 
 	@EventHandler

@@ -2,41 +2,41 @@
 itemGroup.creative_tab_grccellar=itemGroup.creative_tab_grccellar
 
 # Blocks
-tile.grc.fruit_press.name=tile.grc.fruit_press.name
-tile.grc.fruit_presser.name=tile.grc.fruit_presser.name
-tile.grc.brew_kettle.name=tile.grc.brew_kettle.name
-tile.grc.ferment_barrel.name=tile.grc.ferment_barrel.name
-tile.grc.ferment_jar.name=tile.grc.ferment_jar.name
+tile.fruit_press.name=tile.fruit_press.name
+tile.fruit_presser.name=tile.fruit_presser.name
+tile.brew_kettle.name=tile.brew_kettle.name
+tile.ferment_barrel.name=tile.ferment_barrel.name
+tile.ferment_jar.name=tile.ferment_jar.name
 
 # Items
 # Please remove this field once all other module translations have been updated,
 # this is no longer used
-item.grc.boozeBucket.name=item.grc.boozeBucket.name
+item.boozeBucket.name=item.boozeBucket.name
 
-item.grc.yeast0.name=item.grc.yeast0.name
-item.grc.yeast1.name=item.grc.yeast1.name
-item.grc.yeast2.name=item.grc.yeast2.name
-item.grc.yeast3.name=item.grc.yeast3.name
-item.grc.yeast4.name=item.grc.yeast4.name
+item.yeast0.name=item.yeast0.name
+item.yeast1.name=item.yeast1.name
+item.yeast2.name=item.yeast2.name
+item.yeast3.name=item.yeast3.name
+item.yeast4.name=item.yeast4.name
 
 # Water Bags
-item.grc.water_bag.white.name=item.grc.water_bag.white.name
-item.grc.water_bag.orange.name=item.grc.water_bag.orange.name
-item.grc.water_bag.magenta.name=item.grc.water_bag.magenta.name
-item.grc.water_bag.light_blue.name=item.grc.water_bag.light_blue.name
-item.grc.water_bag.yellow.name=item.grc.water_bag.yellow.name
-item.grc.water_bag.lime.name=item.grc.water_bag.lime.name
-item.grc.water_bag.pink.name=item.grc.water_bag.pink.name
-item.grc.water_bag.gray.name=item.grc.water_bag.gray.name
-item.grc.water_bag.silver.name=item.grc.water_bag.silver.name
-item.grc.water_bag.cyan.name=item.grc.water_bag.cyan.name
-item.grc.water_bag.purple.name=item.grc.water_bag.purple.name
-item.grc.water_bag.blue.name=item.grc.water_bag.blue.name
-item.grc.water_bag.brown.name=item.grc.water_bag.brown.name
-item.grc.water_bag.green.name=item.grc.water_bag.green.name
-item.grc.water_bag.red.name=item.grc.water_bag.red.name
-item.grc.water_bag.black.name=item.grc.water_bag.black.name
-item.grc.water_bag.name=item.grc.water_bag.name
+item.water_bag.white.name=item.water_bag.white.name
+item.water_bag.orange.name=item.water_bag.orange.name
+item.water_bag.magenta.name=item.water_bag.magenta.name
+item.water_bag.light_blue.name=item.water_bag.light_blue.name
+item.water_bag.yellow.name=item.water_bag.yellow.name
+item.water_bag.lime.name=item.water_bag.lime.name
+item.water_bag.pink.name=item.water_bag.pink.name
+item.water_bag.gray.name=item.water_bag.gray.name
+item.water_bag.silver.name=item.water_bag.silver.name
+item.water_bag.cyan.name=item.water_bag.cyan.name
+item.water_bag.purple.name=item.water_bag.purple.name
+item.water_bag.blue.name=item.water_bag.blue.name
+item.water_bag.brown.name=item.water_bag.brown.name
+item.water_bag.green.name=item.water_bag.green.name
+item.water_bag.red.name=item.water_bag.red.name
+item.water_bag.black.name=item.water_bag.black.name
+item.water_bag.name=item.water_bag.name
 
 # Containers
 container.grc.fruit_press=container.grc.fruit_press
@@ -88,11 +88,11 @@ grc.cellar.format.fluid_container.contents=grc.cellar.format.fluid_container.con
 grc.cellar.format.tipsy_chance=grc.cellar.format.tipsy_chance
 
 grc.cellar.brew_kettle.brewing_prefix=grc.cellar.brew_kettle.brewing_prefix
-grc.cellar.brew_kettle.itemslot.item=grc.cellar.brew_kettle.itemslot.item
+grc.cellar.brew_kettle.itemslot.item.cellar.brew_kettle.itemslot.item
 grc.cellar.brew_kettle.itemslot.residue=grc.cellar.brew_kettle.itemslot.residue
 grc.cellar.ferment_barrel.itemslot.modifier=grc.cellar.ferment_barrel.itemslot.modifier
 grc.cellar.ferment_jar.itemslot.yeast=grc.cellar.ferment_jar.itemslot.yeast
-grc.cellar.fruit_press.itemslot.item=grc.cellar.fruit_press.itemslot.item
+grc.cellar.fruit_press.itemslot.item.cellar.fruit_press.itemslot.item
 grc.cellar.fruit_press.itemslot.residue=grc.cellar.fruit_press.itemslot.residue
 grc.cellar.fruit_presser.state.invalid=grc.cellar.fruit_presser.state.invalid
 grc.cellar.fruit_presser.state.pressed=grc.cellar.fruit_presser.state.pressed

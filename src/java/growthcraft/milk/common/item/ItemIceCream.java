@@ -42,7 +42,7 @@ public class ItemIceCream extends GrcItemFoodBase
 		super(2, 0.3F, false);
 		setHasSubtypes(true);
 		setMaxDamage(0);
-		setUnlocalizedName("grc.ice_cream");
+		setUnlocalizedName("ice_cream");
 		setCreativeTab(GrowthCraftMilk.creativeTab);
 	}
 
@@ -54,7 +54,7 @@ public class ItemIceCream extends GrcItemFoodBase
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName(stack) + "." + getEnumIceCream(stack).name;
+		return super.getUnlocalizedName(stack) + "." + getEnumIceCream(stack).getBasename();
 	}
 
 	@Override

@@ -43,7 +43,6 @@ public class BlockBambooScaffold extends GrcBlockBase
 	@Override
 	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumFacing facing, float hitX, float hitY, float hitZ)
 	{
-		GrowthCraftBamboo.getLogger().warn("(fixme) BlockBambooScaffold#onBlockActivated");
 		final ItemStack itemstack = player.inventory.getCurrentItem();
 		if (itemstack != null)
 		{
@@ -79,6 +78,7 @@ public class BlockBambooScaffold extends GrcBlockBase
 	@Override
 	public void onNeighborBlockChange(World world, BlockPos pos, IBlockState state, Block block)
 	{
+		super.onNeighborBlockChange(world, pos, state, block);
 		if (!canBlockStay(world, pos))
 		{
 			fellBlockAsItem(world, pos, state);
@@ -121,24 +121,20 @@ public class BlockBambooScaffold extends GrcBlockBase
 
 	private boolean checkSides(World world, BlockPos pos)
 	{
-		final boolean flag = world.getBlockState(pos.east()).getBlock().isAssociatedBlock(this);
-		final boolean flag1 = world.getBlockState(pos.west()).getBlock().isAssociatedBlock(this);
-		final boolean flag2 = world.getBlockState(pos.north()).getBlock().isAssociatedBlock(this);
-		final boolean flag3 = world.getBlockState(pos.south()).getBlock().isAssociatedBlock(this);
-
-		if (!flag && !flag1 && !flag2 && !flag3) return false;
-
-		GrowthCraftBamboo.getLogger().warn("(fixme) BlockBambooScaffold#checkSides");
-		//if (flag && world.getBlock(x + 1, y - 1, z).isSideSolid(world, x + 1, y - 1, z, EnumFacing.UP)) return true;
-		//if (flag1 && world.getBlock(x - 1, y - 1, z).isSideSolid(world, x - 1, y - 1, z, EnumFacing.UP)) return true;
-		//if (flag2 && world.getBlock(x, y - 1, z + 1).isSideSolid(world, x, y - 1, z + 1, EnumFacing.UP)) return true;
-		//if (flag3 && world.getBlock(x, y - 1, z - 1).isSideSolid(world, x, y - 1, z - 1, EnumFacing.UP)) return true;
-
-		//if (flag && world.getBlock(x + 2, y - 1, z).isSideSolid(world, x + 2, y - 1, z, EnumFacing.UP)) return true;
-		//if (flag1 && world.getBlock(x - 2, y - 1, z).isSideSolid(world, x - 2, y - 1, z, EnumFacing.UP)) return true;
-		//if (flag2 && world.getBlock(x, y - 1, z + 2).isSideSolid(world, x, y - 1, z + 2, EnumFacing.UP)) return true;
-		//if (flag3 && world.getBlock(x, y - 1, z - 2).isSideSolid(world, x, y - 1, z - 2, EnumFacing.UP)) return true;
-
+		BlockPos bp;
+		for (EnumFacing facing : EnumFacing.HORIZONTALS)
+		{
+			boolean blockIsSame = world.getBlockState(pos.east()).getBlock().isAssociatedBlock(this);
+			if (blockIsSame)
+			{
+				bp = pos.down();
+				for (int i = 0; i < 2; ++i)
+				{
+					bp = bp.offset(facing);
+					if (world.getBlockState(bp).getBlock().isSideSolid(world, bp, EnumFacing.UP)) return true;
+				}
+			}
+		}
 		return false;
 	}
 

@@ -18,7 +18,7 @@ public class ItemRope extends GrcPseudoItemBlock
 	public ItemRope()
 	{
 		super();
-		setUnlocalizedName("grc.rope");
+		setUnlocalizedName("rope");
 		setCreativeTab(GrowthCraftCore.creativeTab);
 	}
 

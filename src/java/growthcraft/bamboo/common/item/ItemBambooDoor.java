@@ -17,7 +17,7 @@ public class ItemBambooDoor extends ItemDoor
 	{
 		super(GrowthCraftBamboo.blocks.bambooDoor.getBlock());
 		this.maxStackSize = 1;
-		setUnlocalizedName("grc.bamboo_door");
+		setUnlocalizedName("bamboo_door");
 		setCreativeTab(GrowthCraftBamboo.creativeTab);
 	}
 

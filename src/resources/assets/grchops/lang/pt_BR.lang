@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.hop_vine.name=Vinha de Lúpulo
+tile.hop_vine.name=Vinha de Lúpulo
 
 # Items
-item.grc.hops.name=Lúpulo
-item.grc.hop_seeds.name=Sementes de Lúpulo
+item.hops.name=Lúpulo
+item.hop_seeds.name=Sementes de Lúpulo
 
 # Fluids
 fluid.grc.hop_ale_young=Mosto de Cerveja (Ale)

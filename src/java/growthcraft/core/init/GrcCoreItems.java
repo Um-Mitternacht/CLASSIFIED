@@ -35,11 +35,11 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class GrcCoreItems extends GrcModuleItems
 {
+	public ItemDefinition crowbar;
 	public ItemDefinition rope;
 	public ItemDefinition salt;
-	public ItemDefinition saltBucket;
 	public ItemDefinition saltBottle;
-	public ItemDefinition crowbar;
+	public ItemDefinition saltBucket;
 
 	@Override
 	public void preInit()
@@ -56,8 +56,8 @@ public class GrcCoreItems extends GrcModuleItems
 	{
 		rope.register("rope");
 		salt.register("salt");
-		saltBottle.register("salt_bottle");
-		saltBucket.register("salt_bucket");
+		saltBottle.register("bottle_salt");
+		saltBucket.register("bucket_salt");
 		crowbar.register("crowbar");
 	}
 

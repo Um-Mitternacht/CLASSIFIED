@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.apple_block.name=Alma
-tile.grc.apple_sapling.name=Almafa csemete
-tile.grc.apple_leaves.name=Almafa levél
+tile.apple_block.name=Alma
+tile.apple_sapling.name=Almafa csemete
+tile.apple_leaves.name=Almafa levél
 # Items
-item.grc.apple_seeds.name=Alma csutka
+item.apple_seeds.name=Alma csutka
 
 # Booze
 ## Fluids

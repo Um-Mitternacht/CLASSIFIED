@@ -69,12 +69,12 @@ public enum EnumCheeseType implements IItemStackFactory, IFluidStackFactory, ISt
 
 	public static final EnumCheeseType[] VALUES = values();
 
-	public final String name;
 	public final int color;
-	public final int meta;
 	public final List<EnumCheeseFeature> features;
 	public final List<EnumCheeseStage> stages;
 	public final List<IMultiItemStacks> waxes = new ArrayList<IMultiItemStacks>();
+	private final String name;
+	private final int meta;
 
 	private EnumCheeseType( String n, int c, EnumCheeseFeature[] fets, EnumCheeseStage[] stgs)
 	{
@@ -87,6 +87,16 @@ public enum EnumCheeseType implements IItemStackFactory, IFluidStackFactory, ISt
 
 	@Override
 	public String getName()
+	{
+		return name;
+	}
+
+	public int getMetadata()
+	{
+		return meta;
+	}
+
+	public String getBasename()
 	{
 		return name;
 	}

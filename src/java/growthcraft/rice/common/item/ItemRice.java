@@ -35,7 +35,7 @@ public class ItemRice extends GrcItemBase
 				{
 					if (state.getValue(BlockPaddyBase.LEVEL) > 0)
 					{
-						world.setBlockState(pos.up(), GrowthCraftRice.riceBlock.getBlock().getDefaultState(), BlockFlags.UPDATE_AND_SYNC);
+						world.setBlockState(pos.up(), GrowthCraftRice.blocks.riceBlock.getBlock().getDefaultState(), BlockFlags.UPDATE_AND_SYNC);
 						--stack.stackSize;
 						return true;
 					}

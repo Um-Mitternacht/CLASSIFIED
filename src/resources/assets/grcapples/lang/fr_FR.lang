@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.apple_block.name=Pommes
-tile.grc.apple_sapling.name=Pousse de pommier
-tile.grc.apple_leaves.name=Feuilles de pommier
+tile.apple_block.name=Pommes
+tile.apple_sapling.name=Pousse de pommier
+tile.apple_leaves.name=Feuilles de pommier
 # Items
-item.grc.apple_seeds.name=Trognon de pomme
+item.apple_seeds.name=Trognon de pomme
 
 # Booze
 ## Fluids

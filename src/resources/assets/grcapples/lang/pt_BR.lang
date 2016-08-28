@@ -1,9 +1,9 @@
 # Blocks
-tile.grc.apple_block.name=Maçã
-tile.grc.apple_sapling.name=Muda de Macieira
-tile.grc.apple_leaves.name=Folhas de Macieira
+tile.apple_block.name=Maçã
+tile.apple_sapling.name=Muda de Macieira
+tile.apple_leaves.name=Folhas de Macieira
 # Items
-item.grc.apple_seeds.name=Sementes de Maçã
+item.apple_seeds.name=Sementes de Maçã
 
 # Booze
 ## Fluids

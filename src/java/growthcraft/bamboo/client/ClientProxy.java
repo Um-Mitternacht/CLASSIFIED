@@ -35,6 +35,7 @@ public class ClientProxy extends CommonProxy
 		final GrcModelRegistry gmr = GrcModelRegistry.instance();
 		gmr.registerAll(GrowthCraftBamboo.blocks.all, 0, GrowthCraftBamboo.resources);
 		gmr.setCustomStateMapperForAll(GrowthCraftBamboo.blocks.all, new GrcDomainStateMapper(GrowthCraftBamboo.resources));
+		gmr.registerAllItems(GrowthCraftBamboo.items.all, 0, GrowthCraftBamboo.resources);
 	}
 
 	@Override

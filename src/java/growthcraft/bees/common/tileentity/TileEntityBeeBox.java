@@ -357,11 +357,11 @@ public class TileEntityBeeBox extends GrcTileEntityInventoryBase implements IIte
 			else if (item == Items.dye)
 			{
 				int time = 0;
-				if (stack.getItemDamage() == EnumDye.PINK.meta)
+				if (stack.getItemDamage() == EnumDye.PINK.getDyeDamage())
 				{
 					time = 9600;
 				}
-				else if (stack.getItemDamage() == EnumDye.MAGENTA.meta)
+				else if (stack.getItemDamage() == EnumDye.MAGENTA.getDyeDamage())
 				{
 					time = 4800;
 				}
